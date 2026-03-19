@@ -1,7 +1,4 @@
 import { useState, useEffect } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from './assets/vite.svg'
-import heroImg from './assets/hero.png'
 import './App.css'
 
 function App() {
@@ -12,7 +9,8 @@ function App() {
 useEffect(() => {
   const interval = setInterval(() => {
     setDots((prev) => (prev < 3 ? prev + 1 : 0));
-  }, 500); // adjust speed (ms)
+  }, 500); 
+  // 500 is the
 
   return () => clearInterval(interval); // cleanup
 }, []);
