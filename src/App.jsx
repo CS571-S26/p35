@@ -1,39 +1,29 @@
-import { useState, useEffect } from 'react'
-import './App.css'
+import React from 'react';
+import { Routes, Route } from 'react-router-dom';
+import Layout from './Layout';
 
-function App() {
-  const [count, setCount] = useState(0)
-  const [dots, setDots] = useState(1)
+// IMPORTANT: You must import the Bootstrap CSS file!
+import 'bootstrap/dist/css/bootstrap.min.css';
 
+// Dummy page components for demonstration
+const Home = () => <h2>Home Page Content</h2>;
+const Reports = () => <h2>Reports Content</h2>;
+const Settings = () => <h2>Settings Content</h2>;
 
-useEffect(() => {
-  const interval = setInterval(() => {
-    setDots((prev) => (prev < 3 ? prev + 1 : 0));
-  }, 500); 
-  // 500 is the
-
-  return () => clearInterval(interval); // cleanup
-}, []);
- 
+const App = () => {
   return (
-    <>
-      <section id="center">
-        <div>
-          <h1>Project Loading{'.'.repeat(dots)}</h1>
-          <p>
-            <code>Pierce Seigne & Ryan Ross</code>
-          </p>
-        </div>
-        <button
-          className="counter"
-          onClick={() => setCount((count) => count + 1)}
-        >
-          Count is {count}
-        </button>
-      </section>
+    <Routes>
+      {/* The parent route uses the Layout component */}
+      <Route path="/" element={<Layout />}>
+        
+        {/* Child routes render inside the <Outlet /> */}
+        <Route index element={<Home />} /> 
+        <Route path="reports" element={<Reports />} />
+        <Route path="settings" element={<Settings />} />
+        
+      </Route>
+    </Routes>
+  );
+};
 
-    </>
-  )
-}
-
-export default App
+export default App;
