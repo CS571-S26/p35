@@ -14,6 +14,25 @@ const DAY_LABELS = {
 export default function WeeklyScheduleCard(props) {
     const weeklySchedule = props.weeklySchedule ?? {};
 
+    if (Array.isArray(weeklySchedule)) {
+        return (
+            <Card>
+                <Card.Body>
+                    <Card.Title>Schedule of Topics</Card.Title>
+                    <Row>
+                        {weeklySchedule.map((item, i) => (
+                            <Col md={6} lg={4} key={`${item.label}-${i}`} className="mb-3">
+                                <h6 className="text-uppercase mb-2">{item.label}</h6>
+                                <p className="mb-1">{item.topic}</p>
+                                <p className="mb-0 text-muted">{item.tasks ?? "No tasks listed."}</p>
+                            </Col>
+                        ))}
+                    </Row>
+                </Card.Body>
+            </Card>
+        );
+    }
+
     return (
         <Card>
             <Card.Body>

@@ -14,9 +14,23 @@ export default function Calendar(props) {
         return <div>Loading calendar...</div>;
     }
 
-    const classTimes = currentSyllabus.classTime ?? [];
-    const importantDates = currentSyllabus.importantDates ?? [];
-    const weeklySchedule = currentSyllabus.expectedWeeklySchedule ?? {};
+    const classTimes = (currentSyllabus.class_sessions ?? []).map((session) => ({
+        type: session.type,
+        times: [
+            `${session.day_of_week} ${session.start_time_24h} - ${session.end_time_24h}`,
+        ],
+    }));
+
+    const importantDates = (currentSyllabus.important_dates ?? []).map((item) => ({
+        event: item.event,
+        date: item.date_iso,
+    }));
+
+    const weeklySchedule = (currentSyllabus.schedule_of_topics ?? []).map((item) => ({
+        label: item.week_or_date,
+        topic: item.topic_name,
+        tasks: item.readings_or_tasks,
+    }));
 
     return (
         <div>

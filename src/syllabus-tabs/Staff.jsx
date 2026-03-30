@@ -5,14 +5,16 @@ import StaffProfile from "./Components/StaffProfile";
 
 // Use context to get the current syllabus 
 export default function Staff(props) {
-    const { currentSyllabus } = useContext(SyllabusContext);
+    const { allSyllabi } = useContext(SyllabusContext);
+    const currentSyllabus = allSyllabi?.[0];
 
     if (!currentSyllabus) {
         return <div>Loading staff...</div>;
     }
 
-    const professors = currentSyllabus.professors ?? [];
-    const tas = currentSyllabus.TAs ?? [];
+    const staff = currentSyllabus.staff ?? [];
+    const professors = staff.filter((person) => person.role === 'Professor');
+    const tas = staff.filter((person) => person.role === 'TA');
 
     return (
         <div>

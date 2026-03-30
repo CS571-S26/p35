@@ -13,8 +13,8 @@ export default function Grading(props) {
 		return <div>Loading grading...</div>;
 	}
 
-	const gradeMakeup = currentSyllabus.gradeMakeup ?? [];
-	const gradeCutoffs = currentSyllabus.gradeCutoffs ?? [];
+	const gradeMakeup = currentSyllabus.grade_makeup ?? [];
+	const gradeCutoffs = currentSyllabus.grade_cutoffs ?? [];
 
 	return (
 		<div>

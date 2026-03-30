@@ -13,33 +13,19 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 
 // FOR TESTING 
-import testData from './assets/tests/571output.json';
+import testData from './assets/tests/cs571.json';
 
 
 export default function App() {
 
   // Store all loaded syllabi 
   const [allSyllabi, setAllSyllabi] = useState([]);
-  const [selectedSyllabusIndex, setSelectedSyllabusIndex] = useState(0);
 
   // TODO
   // THIS IS WHERE WE WILL FETCH THE DATA FROM THE BACKEND
   useEffect(() => {
-    const secondSyllabus = {
-      ...testData,
-      course: 'CS570: Intro to Human-Computer Interaction',
-      classTime: [
-        {
-          type: 'Lecture',
-          times: ['Mo 11:00 am - 12:15 pm', 'We 11:00 am - 12:15 pm'],
-        },
-      ],
-    };
-
-    setAllSyllabi([testData, secondSyllabus]);
+    setAllSyllabi([testData]);
   }, []);
-
-  const currentSyllabus = allSyllabi?.[selectedSyllabusIndex] ?? null;
 
 
   // console.log(syllabusData)
@@ -49,15 +35,7 @@ export default function App() {
 
 
   return (
-    <SyllabusContext.Provider
-      value={{
-        allSyllabi,
-        setAllSyllabi,
-        selectedSyllabusIndex,
-        setSelectedSyllabusIndex,
-        currentSyllabus,
-      }}
-    >
+    <SyllabusContext.Provider value={{ allSyllabi, setAllSyllabi }}>
       <Routes>
         {/* The parent route uses the Nav component */}
         <Route path="/" element={<Layout />}>
