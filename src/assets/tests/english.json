@@ -1,1 +1,261 @@
-{"course_code":"ENGLISH/HISTORY/RELIGIOUS STUDIES 360","course_title":"Early Medieval England","credits":"3 credits","course_description":"Introduction to the peoples and cultures of Early Medieval England (c450c1100), with primary emphasis on texts written in Old English and Latin. Interdisciplinary approach including history, literature, religion, and material culture. Attention to literary genres ranging from elegy to riddles; the development of Christianity; encounters with Romans, Vikings, and Normans; and other political and social concerns. All readings in translation.","staff":[{"name":"Jordan Zweck","role":"Professor","email":"jlzweck@wisc.edu","phone":null,"office":"6145 Helen C White Hall","officeHours":"Tuesdays 11:30am-1:30pm (or by appointment)"}],"class_sessions":[{"type":"Lecture","day_of_week":"Tuesday","start_time_24h":"09:30","end_time_24h":"10:45"},{"type":"Lecture","day_of_week":"Thursday","start_time_24h":"09:30","end_time_24h":"10:45"}],"grade_makeup":[{"assignment_category":"Paper 1","count":1,"weight_percentage":15.0,"total_points":null,"drop_lowest":0},{"assignment_category":"Midterm","count":1,"weight_percentage":20.0,"total_points":null,"drop_lowest":0},{"assignment_category":"Paper 2","count":1,"weight_percentage":20.0,"total_points":null,"drop_lowest":0},{"assignment_category":"Final Exam","count":1,"weight_percentage":25.0,"total_points":null,"drop_lowest":0},{"assignment_category":"Participation","count":1,"weight_percentage":20.0,"total_points":null,"drop_lowest":0}],"grade_cutoffs":[{"letter_grade":"A","min_percent":93.0,"max_percent":100.0},{"letter_grade":"AB","min_percent":88.0,"max_percent":92.0},{"letter_grade":"B","min_percent":83.0,"max_percent":87.0},{"letter_grade":"BC","min_percent":78.0,"max_percent":82.0},{"letter_grade":"C","min_percent":71.0,"max_percent":77.0},{"letter_grade":"D","min_percent":65.0,"max_percent":70.0},{"letter_grade":"F","min_percent":0.0,"max_percent":64.0}],"important_dates":[{"event":"Paper 1 Due","date_iso":"2026-02-17","is_deadline":true},{"event":"Midterm Exam","date_iso":"2026-03-10","is_deadline":true},{"event":"Paper 2 Due","date_iso":"2026-04-14","is_deadline":true},{"event":"Final Exam","date_iso":"2026-05-05","is_deadline":true}],"schedule_of_topics":[{"week_or_date":"Week 1","topic_name":"The Early Medieval English: Origin Stories, Nostalgia, and the Past","readings_or_tasks":"Introduction to the course"},{"week_or_date":"Week 2","topic_name":"Origin Stories, Nostalgia, and the Past, cont.","readings_or_tasks":"Bede, Ecclesiastical History of the English People"},{"week_or_date":"Week 3","topic_name":"Nostalgia; Care for the Soul","readings_or_tasks":"The Wanderer, The Ruin"},{"week_or_date":"Week 4","topic_name":"Care for Souls and Care for Bodies","readings_or_tasks":"The Grave, Old English Soul and Body"},{"week_or_date":"Week 5","topic_name":"Gender, Women, Sexuality","readings_or_tasks":"Wulf and Eadwacer, The Wife’s Lament"},{"week_or_date":"Week 6","topic_name":"Gender, Women, Sexuality, cont.","readings_or_tasks":"Apollonius of Tyre"},{"week_or_date":"Week 7","topic_name":"Riddles, Animals, and Everyday Life?","readings_or_tasks":"Exeter Book Riddles"},{"week_or_date":"Week 8","topic_name":"Midterm","readings_or_tasks":"MIDTERM EXAM (during class)"},{"week_or_date":"Week 9","topic_name":"English Nationalism, Vikings, and Anglo-Scandinavians","readings_or_tasks":"Asser, Life of King Alfred"},{"week_or_date":"Week 10","topic_name":"English Nationalism, Vikings, and Anglo-Scandinavians, cont.","readings_or_tasks":"Ælfric, Life of St Swithun"},{"week_or_date":"Week 11","topic_name":"NO CLASS","readings_or_tasks":"SPRING BREAK"},{"week_or_date":"Week 12","topic_name":"The Ends of Early Medieval England? and Beowulf","readings_or_tasks":"Sources related to the Battle of Stamford Bridge, the Battle of Hastings and the Norman Conquest"},{"week_or_date":"Week 13","topic_name":"Beowulf, cont.","readings_or_tasks":"Beowulf, lines 837-1650"},{"week_or_date":"Week 14","topic_name":"Beowulf, cont.; Afterlives of Early Medieval England","readings_or_tasks":"Purvis, Beowulf: A New Translation (excerpts)"},{"week_or_date":"Week 15","topic_name":"Afterlives of Early Medieval England, cont.","readings_or_tasks":"Oberman, The Unstill Ones, pp. ix-42"}],"policies":[{"policy_name":"Class Participation and Attendance","summary":"Attendance is mandatory. Students are allowed up to four absences. Participation involves active discussion, engagement with texts, and listening to classmates."},{"policy_name":"Electronics policy","summary":"Laptops, tablets, and e-readers are allowed for note-taking and reading. Misuse may result in loss of permission."},{"policy_name":"Academic Honesty and AI","summary":"Use of generative AI tools is strictly prohibited unless specifically allowed in an assignment. Grammarly may only be used for mechanical checks."},{"policy_name":"Students with Disabilities","summary":"Accommodations are provided through the McBurney Disability Resource Center. Contact the professor early if accommodations are needed."},{"policy_name":"Diversity and Inclusive Excellence","summary":"UW-Madison values diversity and aims to create a welcoming and inclusive community."},{"policy_name":"Intellectual Property","summary":"Lecture materials are protected intellectual property and cannot be commercially disseminated or recorded without permission."},{"policy_name":"Content Note","summary":"Content includes sensitive topics; discussions should be thoughtful and respectful."}],"resources":[{"name":"Canvas","link_or_details":"https://canvas.wisc.edu/courses/489780"},{"name":"Beowulf: A Facing Page Translation","link_or_details":"ISBN: 9781554811137"},{"name":"Old English Poetry: An Anthology","link_or_details":"ISBN: 9781554811571"},{"name":"Bede, Ecclesiastical History of the English People","link_or_details":"ISBN: 9780140445657"},{"name":"Miller Oberman, The Unstill Ones","link_or_details":"ISBN: 9780691176833"},{"name":"University Bookstore","link_or_details":"711 State Street, (608) 257-3784"}],"expected_hours_per_week":"6 hours","additional_notes":null}
+{
+    "course_code": "ENGLISH/HISTORY/RELIGIOUS STUDIES 360",
+    "course_title": "Early Medieval England",
+    "credits": "3 credits",
+    "course_description": "Introduction to the peoples and cultures of Early Medieval England (c450c1100), with primary emphasis on texts written in Old English and Latin. Interdisciplinary approach including history, literature, religion, and material culture. Attention to literary genres ranging from elegy to riddles; the development of Christianity; encounters with Romans, Vikings, and Normans; and other political and social concerns. All readings in translation.",
+    "staff": [
+        {
+            "name": "Jordan Zweck",
+            "role": "Professor",
+            "email": "jlzweck@wisc.edu",
+            "phone": null,
+            "office": "6145 Helen C White Hall",
+            "officeHours": "Tuesdays 11:30am-1:30pm (or by appointment)"
+        }
+    ],
+    "class_sessions": [
+        {
+            "type": "Lecture",
+            "day_of_week": "Tuesday",
+            "start_time_24h": "09:30",
+            "end_time_24h": "10:45"
+        },
+        {
+            "type": "Lecture",
+            "day_of_week": "Thursday",
+            "start_time_24h": "09:30",
+            "end_time_24h": "10:45"
+        }
+    ],
+    "grade_makeup": [
+        {
+            "assignment_category": "Paper 1",
+            "count": 1,
+            "weight_percentage": 15.0,
+            "total_points": null,
+            "drop_lowest": 0
+        },
+        {
+            "assignment_category": "Midterm",
+            "count": 1,
+            "weight_percentage": 20.0,
+            "total_points": null,
+            "drop_lowest": 0
+        },
+        {
+            "assignment_category": "Paper 2",
+            "count": 1,
+            "weight_percentage": 20.0,
+            "total_points": null,
+            "drop_lowest": 0
+        },
+        {
+            "assignment_category": "Final Exam",
+            "count": 1,
+            "weight_percentage": 25.0,
+            "total_points": null,
+            "drop_lowest": 0
+        },
+        {
+            "assignment_category": "Participation",
+            "count": 1,
+            "weight_percentage": 20.0,
+            "total_points": null,
+            "drop_lowest": 0
+        }
+    ],
+    "grade_cutoffs": [
+        {
+            "letter_grade": "A",
+            "min_percent": 93.0,
+            "max_percent": 100.0
+        },
+        {
+            "letter_grade": "AB",
+            "min_percent": 88.0,
+            "max_percent": 92.0
+        },
+        {
+            "letter_grade": "B",
+            "min_percent": 83.0,
+            "max_percent": 87.0
+        },
+        {
+            "letter_grade": "BC",
+            "min_percent": 78.0,
+            "max_percent": 82.0
+        },
+        {
+            "letter_grade": "C",
+            "min_percent": 71.0,
+            "max_percent": 77.0
+        },
+        {
+            "letter_grade": "D",
+            "min_percent": 65.0,
+            "max_percent": 70.0
+        },
+        {
+            "letter_grade": "F",
+            "min_percent": 0.0,
+            "max_percent": 64.0
+        }
+    ],
+    "important_dates": [
+        {
+            "event": "Paper 1 Due",
+            "date_iso": "2026-02-17",
+            "is_deadline": true
+        },
+        {
+            "event": "Midterm Exam",
+            "date_iso": "2026-03-10",
+            "is_deadline": true
+        },
+        {
+            "event": "Paper 2 Due",
+            "date_iso": "2026-04-14",
+            "is_deadline": true
+        },
+        {
+            "event": "Final Exam",
+            "date_iso": "2026-05-05",
+            "is_deadline": true
+        }
+    ],
+    "schedule_of_topics": [
+        {
+            "week_or_date": "Week 1",
+            "topic_name": "The Early Medieval English: Origin Stories, Nostalgia, and the Past",
+            "readings_or_tasks": "Introduction to the course"
+        },
+        {
+            "week_or_date": "Week 2",
+            "topic_name": "Origin Stories, Nostalgia, and the Past, cont.",
+            "readings_or_tasks": "Bede, Ecclesiastical History of the English People"
+        },
+        {
+            "week_or_date": "Week 3",
+            "topic_name": "Nostalgia; Care for the Soul",
+            "readings_or_tasks": "The Wanderer, The Ruin"
+        },
+        {
+            "week_or_date": "Week 4",
+            "topic_name": "Care for Souls and Care for Bodies",
+            "readings_or_tasks": "The Grave, Old English Soul and Body"
+        },
+        {
+            "week_or_date": "Week 5",
+            "topic_name": "Gender, Women, Sexuality",
+            "readings_or_tasks": "Wulf and Eadwacer, The Wife’s Lament"
+        },
+        {
+            "week_or_date": "Week 6",
+            "topic_name": "Gender, Women, Sexuality, cont.",
+            "readings_or_tasks": "Apollonius of Tyre"
+        },
+        {
+            "week_or_date": "Week 7",
+            "topic_name": "Riddles, Animals, and Everyday Life?",
+            "readings_or_tasks": "Exeter Book Riddles"
+        },
+        {
+            "week_or_date": "Week 8",
+            "topic_name": "Midterm",
+            "readings_or_tasks": "MIDTERM EXAM (during class)"
+        },
+        {
+            "week_or_date": "Week 9",
+            "topic_name": "English Nationalism, Vikings, and Anglo-Scandinavians",
+            "readings_or_tasks": "Asser, Life of King Alfred"
+        },
+        {
+            "week_or_date": "Week 10",
+            "topic_name": "English Nationalism, Vikings, and Anglo-Scandinavians, cont.",
+            "readings_or_tasks": "Ælfric, Life of St Swithun"
+        },
+        {
+            "week_or_date": "Week 11",
+            "topic_name": "NO CLASS",
+            "readings_or_tasks": "SPRING BREAK"
+        },
+        {
+            "week_or_date": "Week 12",
+            "topic_name": "The Ends of Early Medieval England? and Beowulf",
+            "readings_or_tasks": "Sources related to the Battle of Stamford Bridge, the Battle of Hastings and the Norman Conquest"
+        },
+        {
+            "week_or_date": "Week 13",
+            "topic_name": "Beowulf, cont.",
+            "readings_or_tasks": "Beowulf, lines 837-1650"
+        },
+        {
+            "week_or_date": "Week 14",
+            "topic_name": "Beowulf, cont.; Afterlives of Early Medieval England",
+            "readings_or_tasks": "Purvis, Beowulf: A New Translation (excerpts)"
+        },
+        {
+            "week_or_date": "Week 15",
+            "topic_name": "Afterlives of Early Medieval England, cont.",
+            "readings_or_tasks": "Oberman, The Unstill Ones, pp. ix-42"
+        }
+    ],
+    "policies": [
+        {
+            "policy_name": "Class Participation and Attendance",
+            "summary": "Attendance is mandatory. Students are allowed up to four absences. Participation involves active discussion, engagement with texts, and listening to classmates."
+        },
+        {
+            "policy_name": "Electronics policy",
+            "summary": "Laptops, tablets, and e-readers are allowed for note-taking and reading. Misuse may result in loss of permission."
+        },
+        {
+            "policy_name": "Academic Honesty and AI",
+            "summary": "Use of generative AI tools is strictly prohibited unless specifically allowed in an assignment. Grammarly may only be used for mechanical checks."
+        },
+        {
+            "policy_name": "Students with Disabilities",
+            "summary": "Accommodations are provided through the McBurney Disability Resource Center. Contact the professor early if accommodations are needed."
+        },
+        {
+            "policy_name": "Diversity and Inclusive Excellence",
+            "summary": "UW-Madison values diversity and aims to create a welcoming and inclusive community."
+        },
+        {
+            "policy_name": "Intellectual Property",
+            "summary": "Lecture materials are protected intellectual property and cannot be commercially disseminated or recorded without permission."
+        },
+        {
+            "policy_name": "Content Note",
+            "summary": "Content includes sensitive topics; discussions should be thoughtful and respectful."
+        }
+    ],
+    "resources": [
+        {
+            "name": "Canvas",
+            "link_or_details": "https://canvas.wisc.edu/courses/489780"
+        },
+        {
+            "name": "Beowulf: A Facing Page Translation",
+            "link_or_details": "ISBN: 9781554811137"
+        },
+        {
+            "name": "Old English Poetry: An Anthology",
+            "link_or_details": "ISBN: 9781554811571"
+        },
+        {
+            "name": "Bede, Ecclesiastical History of the English People",
+            "link_or_details": "ISBN: 9780140445657"
+        },
+        {
+            "name": "Miller Oberman, The Unstill Ones",
+            "link_or_details": "ISBN: 9780691176833"
+        },
+        {
+            "name": "University Bookstore",
+            "link_or_details": "711 State Street, (608) 257-3784"
+        }
+    ],
+    "expected_hours_per_week": "6 hours",
+    "additional_notes": null
+}
