@@ -1,0 +1,162 @@
+{
+    "course": "CS571: Building User Interfaces",
+    "professors": [
+        {
+            "name": "Cole Nelson",
+            "email": "ctnelson2@wisc.edu",
+            "office": null,
+            "officeHours": null
+        },
+        {
+            "name": "Kathryn Jensen",
+            "email": "kjensen29@wisc.edu",
+            "office": null,
+            "officeHours": null
+        }
+    ],
+    "TAs": [
+        {
+            "name": "Hongtao Hao",
+            "email": "hongtaoh@cs.wisc.edu",
+            "office": null,
+            "officeHours": null
+        },
+        {
+            "name": "Zhaoyang Liu",
+            "email": "zliu934@wisc.edu",
+            "office": null,
+            "officeHours": null
+        },
+        {
+            "name": "Amy Koike",
+            "email": "ekoike@wisc.edu",
+            "office": null,
+            "officeHours": null
+        },
+        {
+            "name": "Kassie Povinelli",
+            "email": "jpovinelli@wisc.edu",
+            "office": null,
+            "officeHours": null
+        },
+        {
+            "name": "Heidi Spalitta",
+            "email": "hspalitta@wisc.edu",
+            "office": null,
+            "officeHours": null
+        }
+    ],
+    "classTime": [
+        {
+            "type": "Lecture",
+            "times": [
+                "Tu 8:00 am – 9:15 am",
+                "Th 8:00 am – 9:15 am"
+            ]
+        },
+        {
+            "type": "Lecture",
+            "times": [
+                "Tu 9:30 am – 10:45 am",
+                "Th 9:30 am – 10:45 am"
+            ]
+        }
+    ],
+    "gradeMakeup": [
+        {
+            "assignment_type": "Homework",
+            "percentage": "34 points"
+        },
+        {
+            "assignment_type": "In-Class Activities (ICAs)",
+            "percentage": "10 points"
+        },
+        {
+            "assignment_type": "Web Project",
+            "percentage": "10 points"
+        },
+        {
+            "assignment_type": "Midterm Exam",
+            "percentage": "20 points"
+        },
+        {
+            "assignment_type": "Final Exam",
+            "percentage": "25 points"
+        },
+        {
+            "assignment_type": "Attendance",
+            "percentage": "1 point"
+        }
+    ],
+    "gradeCutoffs": [
+        {
+            "grade": "A",
+            "cutoff": ">=94%"
+        },
+        {
+            "grade": "AB",
+            "cutoff": "88-93%"
+        },
+        {
+            "grade": "B",
+            "cutoff": "82-87%"
+        },
+        {
+            "grade": "BC",
+            "cutoff": "76-81%"
+        },
+        {
+            "grade": "C",
+            "cutoff": "70-75%"
+        },
+        {
+            "grade": "D",
+            "cutoff": "60-69%"
+        },
+        {
+            "grade": "F",
+            "cutoff": "<60%"
+        }
+    ],
+    "importantDates": [
+        {
+            "event": "Midterm Exam",
+            "date": "Mar 12th @ 5:45 PM"
+        },
+        {
+            "event": "Final Exam",
+            "date": "May 3rd @ 2:45 PM"
+        },
+        {
+            "event": "Web Project Proposal Due",
+            "date": "Mar 4, 2026"
+        },
+        {
+            "event": "Web Project Check-In #1 Due",
+            "date": "Mar 18, 2026"
+        },
+        {
+            "event": "Web Project Check-In #2 Due",
+            "date": "Apr 8, 2026"
+        },
+        {
+            "event": "Web Project Check-In #3 Due",
+            "date": "Apr 23, 2026"
+        },
+        {
+            "event": "Final Website & Presentation Due",
+            "date": "Apr 29, 2026"
+        }
+    ],
+    "expectedWeeklySchedule": {
+        "mon": [],
+        "tue": [
+            "Lectures on implementation"
+        ],
+        "wed": [],
+        "thu": [
+            "Lectures on fundamental design/HCI topics"
+        ],
+        "fri": []
+    }
+}
