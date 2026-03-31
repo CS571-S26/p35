@@ -1,12 +1,12 @@
 import React from "react";
-import SyllabusContext from "../context/SyllabusContext";
+import AllSyllabiContext from "../context/AllSyllabiContext";
 import { useContext } from 'react';
 import { Col, Row } from "react-bootstrap";
 import GradeMakeupCard from "./Components/GradeMakeupCard";
 import GradeCutoffsCard from "./Components/GradeCutoffsCard";
 
 export default function Grading(props) {
-	const { allSyllabi } = useContext(SyllabusContext);
+	const { allSyllabi } = useContext(AllSyllabiContext);
 	const currentSyllabus = allSyllabi?.[0];
 
 	if (!currentSyllabus) {
