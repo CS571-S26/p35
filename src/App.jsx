@@ -6,7 +6,8 @@ import Calendar from './syllabus-tabs/Calendar'
 import Staff from './syllabus-tabs/Staff'
 import Grading from './syllabus-tabs/Grading'
 import More from './syllabus-tabs/More'
-import SyllabusContext from './context/SyllabusContext';
+import AllSyllabiContext from './context/AllSyllabiContext';
+
 
 // IMPORTANT: You must import the Bootstrap CSS file!
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -14,28 +15,28 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 // FOR TESTING 
 import testData from './assets/tests/cs571.json';
+import testData2 from './assets/tests/econ695.json';
+import testData3 from './assets/tests/english.json';
 
 
 export default function App() {
 
   // Store all loaded syllabi 
   const [allSyllabi, setAllSyllabi] = useState([]);
-
+  const [currentSyllabusIndex, setCurrentSyllabusIndex] = useState(0)
+  
+  
   // TODO
   // THIS IS WHERE WE WILL FETCH THE DATA FROM THE BACKEND
   useEffect(() => {
-    setAllSyllabi([testData]);
+    setAllSyllabi([testData, testData2, testData3]);
+    sessionStorage.setItem('currentSyllabusIndex', 0)
   }, []);
-
-
-  // console.log(syllabusData)
-
-
 
 
 
   return (
-    <SyllabusContext.Provider value={{ allSyllabi, setAllSyllabi }}>
+    <AllSyllabiContext.Provider value={{ allSyllabi, setCurrentSyllabusIndex }}>
       <Routes>
         {/* The parent route uses the Nav component */}
         <Route path="/" element={<Layout />}>
@@ -50,6 +51,6 @@ export default function App() {
 
         </Route>
       </Routes>
-    </SyllabusContext.Provider>
+    </AllSyllabiContext.Provider>
   )
 };

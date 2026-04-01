@@ -1,20 +1,16 @@
 import React from "react";
-import syllabi from "../context/SyllabusContext";
-import { useContext } from 'react';
+import { useContext } from "react";
+import AllSyllabiContext from "../context/AllSyllabiContext";
 
-export default function Overview(props) {
-    const { allSyllabi } = useContext(syllabi);
-    const syllabus = allSyllabi?.[0];
+export default function Overview() {
 
-    if (!syllabus) {
-        return <div>Loading overview...</div>;
+    const { allSyllabi } = useContext(AllSyllabiContext);
+    const index = (sessionStorage.getItem('currentSyllabusIndex'));
+    const currentSyllabus = allSyllabi[index];
+
+    if (!currentSyllabus) {
+        return <h1>Overview TODO</h1>;
     }
-    
-    return <div>
-        <h1>{syllabus.course_code}: {syllabus.course_title}</h1>
-        <p>{syllabus.course_description}</p>
-        <p className="mt-3"><strong>Credits:</strong> {syllabus.credits ?? 'N/A'}</p>
-        <p><strong>Expected Hours/Week:</strong> {syllabus.expected_hours_per_week ?? 'N/A'}</p>
-    </div>
 
+	return <h1>{currentSyllabus.course_code}: {currentSyllabus.course_title}</h1>;
 }

@@ -6,11 +6,11 @@ export default function SyllabusNavigationBar() {
     return (
             <Navbar bg="light" className="border-bottom px-1 flex-shrink-0">
                 <Nav className="flex-row gap-2">
-                    <Nav.Link as={Link} to="/overview" className="text-dark">Overview</Nav.Link>
-                    <Nav.Link as={Link} to="/calendar" className="text-dark">Calendar</Nav.Link>
-                    <Nav.Link as={Link} to="/staff" className="text-dark">Staff</Nav.Link>
-                    <Nav.Link as={Link} to="/grading" className="text-dark">Grading</Nav.Link>
-                    <Nav.Link as={Link} to="/more" className="text-dark">More</Nav.Link>
+                    <Nav.Link as={Link} to="overview" className="text-dark">Overview</Nav.Link>
+                    <Nav.Link as={Link} to="calendar" className="text-dark">Calendar</Nav.Link>
+                    <Nav.Link as={Link} to="staff" className="text-dark">Staff</Nav.Link>
+                    <Nav.Link as={Link} to="grading" className="text-dark">Grading</Nav.Link>
+                    <Nav.Link as={Link} to="more" className="text-dark">More</Nav.Link>
                 </Nav>
             </Navbar>
 
