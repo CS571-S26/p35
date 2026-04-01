@@ -6,6 +6,7 @@ export default function Calendar() {
     const { allSyllabi } = useContext(AllSyllabiContext);
     const index = (sessionStorage.getItem('currentSyllabusIndex'));
     const currentSyllabus = allSyllabi[index];
+    console.log(currentSyllabus)
     return (
         <h1>Calendar TODO</h1>
     );

@@ -7,7 +7,7 @@ import Staff from './syllabus-tabs/Staff'
 import Grading from './syllabus-tabs/Grading'
 import More from './syllabus-tabs/More'
 import AllSyllabiContext from './context/AllSyllabiContext';
-
+import "./App.css";
 
 // IMPORTANT: You must import the Bootstrap CSS file!
 import 'bootstrap/dist/css/bootstrap.min.css';

@@ -30,3 +30,13 @@
     gap: 18px;
   }
 }
+
+
+.staff-card:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  transform: translateY(-1px);
+}
+
+.staff-card {
+  transition: box-shadow 180ms ease, transform 180ms ease;
+}
