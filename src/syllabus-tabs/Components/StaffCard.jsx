@@ -1,5 +1,6 @@
 import React from "react";
-import { Card } from "react-bootstrap";
+import { Card, Button } from "react-bootstrap";
+import { contactCard } from "../../functions/contactCard";
 
 export function StaffCard(props) {
 
@@ -16,8 +17,7 @@ export function StaffCard(props) {
             {props.phone ? <div><strong>Phone:</strong> {props.phone}</div> : <></>}
             {props.office ? <div><strong>Office:</strong> {props.office}</div> : <></>}
             {props.officeHours ? <div><strong>Office Hours:</strong> {props.officeHours}</div> : <></>}
-
-
+            <Button onClick={() => contactCard(props)}>Add to Contacts</Button>
 
         </Card.Body>
     </Card>

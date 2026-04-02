@@ -3,6 +3,7 @@ import { useContext } from "react";
 import { Card, Col, Row } from "react-bootstrap";
 import AllSyllabiContext from "../context/AllSyllabiContext";
 import { StaffCard } from "./Components/StaffCard";
+import { contactCard } from "../functions/contactCard";
 
 export default function Staff() {
     const { allSyllabi } = useContext(AllSyllabiContext);
@@ -21,7 +22,6 @@ export default function Staff() {
     return (
         <div>
             <h1 className="mb-4">Staff</h1>
-
             <h2 className="h4 mb-3">Instructors</h2>
             {professors.length === 0 ? (
                 <p className="mb-4">No instructors listed.</p>
@@ -47,6 +47,13 @@ export default function Staff() {
                     ))}
                 </Row>
             )}
+
+            
         </div>
+
+
+
+
+
     );
 }
