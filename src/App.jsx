@@ -25,18 +25,29 @@ export default function App() {
   const [allSyllabi, setAllSyllabi] = useState([]);
   const [currentSyllabusIndex, setCurrentSyllabusIndex] = useState(0)
   
-  
-  // TODO
-  // THIS IS WHERE WE WILL FETCH THE DATA FROM THE BACKEND
+ 
+// On load, check to see if the user has any data in local storage
+// if not, it loads the demo data
   useEffect(() => {
-    setAllSyllabi([testData, testData2, testData3]);
-    sessionStorage.setItem('currentSyllabusIndex', 0)
+    // Try to load syllabi from localStorage first
+    const storedSyllabi = localStorage.getItem('allSyllabi');
+    if (storedSyllabi) {
+      try {
+        setAllSyllabi(JSON.parse(storedSyllabi));
+      } catch (error) {
+        console.error('Error parsing stored syllabi:', error);
+        setAllSyllabi([testData, testData2, testData3]);
+      }
+    } else {
+      setAllSyllabi([testData, testData2, testData3]);
+    }
+    localStorage.setItem('currentSyllabusIndex', 0)
   }, []);
 
 
 
   return (
-    <AllSyllabiContext.Provider value={{ allSyllabi, setCurrentSyllabusIndex }}>
+    <AllSyllabiContext.Provider value={{ allSyllabi, setAllSyllabi, setCurrentSyllabusIndex }}>
       <Routes>
         {/* The parent route uses the Nav component */}
         <Route path="/" element={<Layout />}>
