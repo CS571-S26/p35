@@ -7,7 +7,7 @@ import { contactCard } from "../functions/contactCard";
 
 export default function Staff() {
     const { allSyllabi } = useContext(AllSyllabiContext);
-    const index = Number(sessionStorage.getItem('currentSyllabusIndex'));
+    const index = Number(localStorage.getItem('currentSyllabusIndex'));
     const currentSyllabus = allSyllabi[index];
 
     if (!currentSyllabus) {

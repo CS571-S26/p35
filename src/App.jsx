@@ -41,7 +41,10 @@ export default function App() {
     } else {
       setAllSyllabi([testData, testData2, testData3]);
     }
-    localStorage.setItem('currentSyllabusIndex', 0)
+
+    if (localStorage.getItem('currentSyllabusIndex') === null) {
+      localStorage.setItem('currentSyllabusIndex', '0');
+    }
   }, []);
 
 
