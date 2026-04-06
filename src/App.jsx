@@ -15,7 +15,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 // FOR TESTING 
 import testData from './assets/tests/cs571.json';
-import testData2 from './assets/tests/econ695.json';
+import testData2 from './assets/tests/econ.json';
 import testData3 from './assets/tests/english.json';
 
 

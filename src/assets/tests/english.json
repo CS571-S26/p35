@@ -2,7 +2,10 @@
     "course_code": "ENGLISH/HISTORY/RELIGIOUS STUDIES 360",
     "course_title": "Early Medieval England",
     "credits": "3 credits",
-    "course_description": "Introduction to the peoples and cultures of Early Medieval England (c450c1100), with primary emphasis on texts written in Old English and Latin. Interdisciplinary approach including history, literature, religion, and material culture. Attention to literary genres ranging from elegy to riddles; the development of Christianity; encounters with Romans, Vikings, and Normans; and other political and social concerns. All readings in translation.",
+    "course_description": "Introduction to the peoples and cultures of Early Medieval England (c450-c1100), with primary emphasis on texts written in Old English and Latin. Interdisciplinary approach including history, literature, religion, and material culture. Attention to literary genres ranging from elegy to riddles; the development of Christianity; encounters with Romans, Vikings, and Normans; and other political and social concerns. All readings in translation.",
+    "course_summary": "Explore the history, literature, religion, art, and culture of early medieval English through texts in Latin and Old English. Covers Christianization and Viking encounters, concluding with the Norman Conquest. No prior experience with medieval literature is required.",
+    "learning_outcomes": "- Recognize and discuss major forms, techniques, and genres shaping English literature and culture.\n- Discern and integrate divergent perspectives, question assumptions, and assess evidence related to Early Medieval England.\n- Write compelling arguments that extend beyond summary to analysis and critical thinking.",
+    "what_you_will_learn": "- The history, literature, religion, art, and culture of early medieval English.\n- How Early Medieval England was formed and Christianized.\n- The influence of modern writers on Old English and Anglo-Latin literature.",
     "staff": [
         {
             "name": "Jordan Zweck",
@@ -127,114 +130,110 @@
         {
             "week_or_date": "Week 1",
             "topic_name": "The Early Medieval English: Origin Stories, Nostalgia, and the Past",
-            "readings_or_tasks": "Introduction to the course"
+            "readings_or_tasks": "Introduction to the course, maps and texts from the Broadview Anthology."
         },
         {
             "week_or_date": "Week 2",
-            "topic_name": "Origin Stories, Nostalgia, and the Past, cont.",
-            "readings_or_tasks": "Bede, Ecclesiastical History of the English People"
+            "topic_name": "Origin Stories, Nostalgia, and the Past, continued.",
+            "readings_or_tasks": "Bede's Ecclesiastical History readings and maps."
         },
         {
             "week_or_date": "Week 3",
             "topic_name": "Nostalgia; Care for the Soul",
-            "readings_or_tasks": "The Wanderer, The Ruin"
+            "readings_or_tasks": "The Wanderer, The Ruin."
         },
         {
             "week_or_date": "Week 4",
             "topic_name": "Care for Souls and Care for Bodies",
-            "readings_or_tasks": "The Grave, Old English Soul and Body"
+            "readings_or_tasks": "The Grave, Old English Soul and Body, Bald\u2019s Leechbook excerpts."
         },
         {
             "week_or_date": "Week 5",
             "topic_name": "Gender, Women, Sexuality",
-            "readings_or_tasks": "Wulf and Eadwacer, The Wife’s Lament"
+            "readings_or_tasks": "Wulf and Eadwacer, The Wife\u2019s Lament."
         },
         {
             "week_or_date": "Week 6",
-            "topic_name": "Gender, Women, Sexuality, cont.",
-            "readings_or_tasks": "Apollonius of Tyre"
+            "topic_name": "Gender, Women, Sexuality, continued.",
+            "readings_or_tasks": "Apollonius of Tyre, The Wonders of the East."
         },
         {
             "week_or_date": "Week 7",
-            "topic_name": "Riddles, Animals, and Everyday Life?",
-            "readings_or_tasks": "Exeter Book Riddles"
+            "topic_name": "Riddles, Animals, and Everyday Life",
+            "readings_or_tasks": "Exeter Book Riddles and readings on Anglo-Saxon life."
         },
         {
             "week_or_date": "Week 8",
             "topic_name": "Midterm",
-            "readings_or_tasks": "MIDTERM EXAM (during class)"
+            "readings_or_tasks": "Midterm Exam during class."
         },
         {
             "week_or_date": "Week 9",
             "topic_name": "English Nationalism, Vikings, and Anglo-Scandinavians",
-            "readings_or_tasks": "Asser, Life of King Alfred"
+            "readings_or_tasks": "Asser\u2019s Life of King Alfred, Anglo-Saxon Chronicle."
         },
         {
             "week_or_date": "Week 10",
-            "topic_name": "English Nationalism, Vikings, and Anglo-Scandinavians, cont.",
-            "readings_or_tasks": "Ælfric, Life of St Swithun"
+            "topic_name": "English Nationalism, Vikings, and Anglo-Scandinavians, continued.",
+            "readings_or_tasks": "Life of St Swithun, The Battle of Maldon."
         },
         {
             "week_or_date": "Week 11",
-            "topic_name": "NO CLASS",
-            "readings_or_tasks": "SPRING BREAK"
+            "topic_name": "No Class",
+            "readings_or_tasks": "Spring Break."
         },
         {
             "week_or_date": "Week 12",
             "topic_name": "The Ends of Early Medieval England? and Beowulf",
-            "readings_or_tasks": "Sources related to the Battle of Stamford Bridge, the Battle of Hastings and the Norman Conquest"
+            "readings_or_tasks": "Battle of Stamford Bridge sources, Map readings."
         },
         {
             "week_or_date": "Week 13",
-            "topic_name": "Beowulf, cont.",
-            "readings_or_tasks": "Beowulf, lines 837-1650"
+            "topic_name": "Beowulf, continued.",
+            "readings_or_tasks": "Beowulf lines 837-1650."
         },
         {
             "week_or_date": "Week 14",
-            "topic_name": "Beowulf, cont.; Afterlives of Early Medieval England",
-            "readings_or_tasks": "Purvis, Beowulf: A New Translation (excerpts)"
+            "topic_name": "Beowulf, continued; Afterlives of Early Medieval England",
+            "readings_or_tasks": "Beowulf lines 2397-3182, modern translations."
         },
         {
             "week_or_date": "Week 15",
-            "topic_name": "Afterlives of Early Medieval England, cont.",
-            "readings_or_tasks": "Oberman, The Unstill Ones, pp. ix-42"
+            "topic_name": "Afterlives of Early Medieval England, continued.",
+            "readings_or_tasks": "Oberman's The Unstill Ones readings."
         }
     ],
     "policies": [
         {
             "policy_name": "Class Participation and Attendance",
-            "summary": "Attendance is mandatory. Students are allowed up to four absences. Participation involves active discussion, engagement with texts, and listening to classmates."
+            "summary": "Discussion-based class requires attendance and active participation. Up to four absences allowed without penalty; further absences impact grade."
         },
         {
-            "policy_name": "Electronics policy",
-            "summary": "Laptops, tablets, and e-readers are allowed for note-taking and reading. Misuse may result in loss of permission."
+            "policy_name": "Electronics Policy",
+            "summary": "Laptops, tablets, and e-readers for note-taking and reading allowed, but other electronic devices are not unless required by disability accommodations."
         },
         {
             "policy_name": "Academic Honesty and AI",
-            "summary": "Use of generative AI tools is strictly prohibited unless specifically allowed in an assignment. Grammarly may only be used for mechanical checks."
+            "summary": "Generative AI tools are prohibited unless stated. Plagiarism, including AI work, results in a zero for that assignment."
         },
         {
             "policy_name": "Students with Disabilities",
-            "summary": "Accommodations are provided through the McBurney Disability Resource Center. Contact the professor early if accommodations are needed."
+            "summary": "Contact the professor with accommodation needs. All disability information is confidential."
         },
         {
             "policy_name": "Diversity and Inclusive Excellence",
-            "summary": "UW-Madison values diversity and aims to create a welcoming and inclusive community."
+            "summary": "Diversity enriches the university community; class commits to a welcoming and inclusive environment."
         },
         {
             "policy_name": "Intellectual Property",
-            "summary": "Lecture materials are protected intellectual property and cannot be commercially disseminated or recorded without permission."
+            "summary": "Lecture materials are the university's property; commercial use is prohibited."
         },
         {
             "policy_name": "Content Note",
-            "summary": "Content includes sensitive topics; discussions should be thoughtful and respectful."
+            "summary": "Course material includes sensitive content; students are expected to engage thoughtfully."
         }
     ],
     "resources": [
-        {
-            "name": "Canvas",
-            "link_or_details": "https://canvas.wisc.edu/courses/489780"
-        },
         {
             "name": "Beowulf: A Facing Page Translation",
             "link_or_details": "ISBN: 9781554811137"
@@ -252,10 +251,10 @@
             "link_or_details": "ISBN: 9780691176833"
         },
         {
-            "name": "University Bookstore",
-            "link_or_details": "711 State Street, (608) 257-3784"
+            "name": "Canvas Course URL",
+            "link_or_details": "https://canvas.wisc.edu/courses/489780"
         }
     ],
-    "expected_hours_per_week": "6 hours",
+    "expected_hours_per_week": "3 hours per class period",
     "additional_notes": null
 }

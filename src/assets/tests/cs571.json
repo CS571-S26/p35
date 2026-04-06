@@ -1,12 +1,15 @@
 {
     "course_code": "CS571",
     "course_title": "Building User Interfaces",
-    "credits": "3",
-    "course_description": "Introduces software development of user interfaces (UIs). Build competence in implementing UIs using state-of-the-art (1) UI paradigms, such as event-driven interfaces, direct-manipulation interfaces, and dialogue-based interaction; (2) methods for capturing, interpreting, and responding to different forms of user input and states, including pointing, text entry, speech, touch, gestures, user activity, context, and physiological states; and (3) platform-specific UI development APIs, frameworks, and toolkits for multiple platforms including web/mobile/desktop interfaces, natural user interfaces, and voice user interfaces. Learn about the fundamental concepts, technologies, algorithms, and methods in building user interfaces, implement UIs using of state-of-the-art UI development tools, and build a UI development portfolio.",
+    "credits": "3 credits",
+    "course_description": "Introduces software development of user interfaces (UIs). Build competence in implementing UIs using state-of-the-art UI paradigms, methods for capturing, interpreting, and responding to user input, and platform-specific UI development APIs.",
+    "course_summary": "Students will learn to implement user interfaces using modern paradigms, capture and interpret user input, and use platform-specific APIs for web, mobile, and desktop applications.",
+    "learning_outcomes": "- Program front-end, user-facing software elements using state-of-the-art tools.\n- Engage in design thinking and ideate conceptual design solutions.\n- Prototype and develop user interfaces for various platforms including web and mobile.\n- Follow and apply user-centered design principles and heuristics.\n- Create visual designs and effectually use design languages and elements.",
+    "what_you_will_learn": "- Front-end UI programming using modern languages and libraries.\n- Design thinking and conceptual solution communication.\n- Building prototypes for web and mobile UIs.\n- Iterative design and evaluation using user-centered design methods.\n- Visual design, layout, and navigation structure creation.",
     "staff": [
         {
             "name": "Cole Nelson",
-            "role": "Professor",
+            "role": "Instructor",
             "email": "ctnelson2@wisc.edu",
             "phone": null,
             "office": null,
@@ -14,7 +17,7 @@
         },
         {
             "name": "Kathryn Jensen",
-            "role": "Professor",
+            "role": "Instructor",
             "email": "kjensen29@wisc.edu",
             "phone": null,
             "office": null,
@@ -188,7 +191,7 @@
             "is_deadline": true
         },
         {
-            "event": "Final Website & Presentation Due",
+            "event": "Web Project Final Presentation",
             "date_iso": "2026-04-29",
             "is_deadline": true
         }
@@ -201,7 +204,7 @@
         },
         {
             "week_or_date": "Week 2",
-            "topic_name": "Web Dev Basics 1 & Web Dev Basics 2",
+            "topic_name": "Web Dev Basics 1 & 2",
             "readings_or_tasks": "HW1"
         },
         {
@@ -231,7 +234,7 @@
         },
         {
             "week_or_date": "Week 8",
-            "topic_name": "Web Dev 5 & Midterm Exam",
+            "topic_name": "Midterm Exam",
             "readings_or_tasks": null
         },
         {
@@ -246,8 +249,8 @@
         },
         {
             "week_or_date": "Week 11",
-            "topic_name": "Mobile Dev 3 & VUI Design",
-            "readings_or_tasks": "HW9, ICA I"
+            "topic_name": "Spring Break",
+            "readings_or_tasks": null
         },
         {
             "week_or_date": "Week 12",
@@ -273,15 +276,15 @@
     "policies": [
         {
             "policy_name": "Late Work",
-            "summary": "Students have a total of 10 late days on HWs; ICAs cannot be submitted late; Web Project has strict timelines with penalties."
+            "summary": "Assignments have a total of 10 late days, 10% off per day late after depletion. No submissions >7 days late."
         },
         {
-            "policy_name": "Academic Integrity",
-            "summary": "AI use is restricted on HWs and ICAs; encouraged on web projects. Academic misconduct includes cheating, fabrication, and plagiarism."
+            "policy_name": "Academic Integrity & AI Use",
+            "summary": "AI usage is restricted on HWs and ICAs but permitted on web projects, with expectations for understanding and explaining personal code."
         },
         {
             "policy_name": "Accommodations",
-            "summary": "Students with disabilities should inform the instructor by week 3 for instructional accommodations."
+            "summary": "Students with special needs must inform the instructor as soon as possible to arrange accommodations."
         }
     ],
     "resources": [
@@ -290,7 +293,7 @@
             "link_or_details": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise/all"
         },
         {
-            "name": "React.dev",
+            "name": "React.dev & ReactNative.dev",
             "link_or_details": "https://react.dev/reference/react"
         },
         {
@@ -298,14 +301,22 @@
             "link_or_details": "https://eloquentjavascript.net/"
         },
         {
-            "name": "Nielsen/Norman Group",
-            "link_or_details": "https://www.nngroup.com/"
+            "name": "The Design of Everyday Things by Don Norman",
+            "link_or_details": "https://mitpress.mit.edu/9780262525671/the-design-of-everyday-things/"
         },
         {
-            "name": "The Design of Everyday Things",
-            "link_or_details": "https://mitpress.mit.edu/9780262525671/the-design-of-everyday-things/"
+            "name": "TopHat",
+            "link_or_details": "https://it.wisc.edu/services/top-hat/"
+        },
+        {
+            "name": "VSCode, NodeJS, Postman, Git",
+            "link_or_details": null
+        },
+        {
+            "name": "Expo for mobile",
+            "link_or_details": null
         }
     ],
-    "expected_hours_per_week": "6",
-    "additional_notes": "None"
+    "expected_hours_per_week": "6 hours",
+    "additional_notes": "Office hours and additional staff details available on Canvas."
 }

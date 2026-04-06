@@ -15,7 +15,7 @@ export default function Staff() {
     }
 
     const staff = currentSyllabus.staff ?? [];
-    const professors = staff.filter((person) => person.role === "Professor");
+    const professors = staff.filter((person) => person.role === "Professor" || person.role === "Instructor");
     const tas = staff.filter((person) => person.role === "TA");
 
 
