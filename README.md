@@ -4,6 +4,7 @@
 - [ ] Add ability to remove syllabi
 - [ ] Make the CS571 under a "load demo option" 
 - [ ] Make backend spit out related policies. e.g., under grading would be a late policy or drop policy
+- [ ] Make backend more intentional about dates. e.g., week 1, week 2. Specify EXACT dates 
 - [ ] Should Probably make it so you can view the full pdf the user uploaded somewhere.
 - [ ] I don't think the current backend actually extracts the school. This is pretty important if this application can be used outside of UW-Madison. 
 
