@@ -1,14 +1,11 @@
 import React from "react";
-import { useContext } from "react";
 import { Card, Col, Row } from "react-bootstrap";
-import AllSyllabiContext from "../context/AllSyllabiContext";
+import { useCurrentSyllabus } from "../context/AllSyllabiContext";
 import { StaffCard } from "./Components/StaffCard";
 import { contactCard } from "../functions/contactCard";
 
 export default function Staff() {
-    const { allSyllabi } = useContext(AllSyllabiContext);
-    const index = Number(localStorage.getItem('currentSyllabusIndex'));
-    const currentSyllabus = allSyllabi[index];
+    const currentSyllabus = useCurrentSyllabus();
 
     if (!currentSyllabus) {
         return <h1>Staff Loading...</h1>;

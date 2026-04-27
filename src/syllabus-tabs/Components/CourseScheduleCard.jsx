@@ -1,7 +1,7 @@
 import React from "react";
 import { Card, Table } from "react-bootstrap";
 
-export function WeeklyScheduleCard(props) {
+export function CourseScheduleCard(props) {
     const scheduleOfTopics = props.scheduleOfTopics ?? [];
     // Check to see if there are tasks (to determine whether or not to show the column)
     const showTasksColumn = scheduleOfTopics.some((item) => item.readings_or_tasks);
@@ -13,12 +13,12 @@ export function WeeklyScheduleCard(props) {
                 {scheduleOfTopics.length === 0 ? (
                     <p className="mb-0">No course schedule found.</p>
                 ) : (
-                    <Table bordered responsive className="mb-0">
+                    <Table responsive className="mb-0">
                         <thead>
                             <tr>
                                 <th>Week</th>
                                 <th>Topic</th>
-                                {showTasksColumn ? <th>Tasks or Readings</th> : null}
+                                {showTasksColumn ? <th>Assignments</th> : null}
                             </tr>
                         </thead>
                         <tbody>

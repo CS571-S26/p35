@@ -3,10 +3,18 @@
 ## General Functionality 
 - [ ] Add ability to remove syllabi
 - [ ] Make the CS571 under a "load demo option" 
+- [ ] Should Probably make it so you can view the full pdf the user uploaded somewhere.
+
+## Backend
 - [ ] Make backend spit out related policies. e.g., under grading would be a late policy or drop policy
 - [ ] Make backend more intentional about dates. e.g., week 1, week 2. Specify EXACT dates 
-- [ ] Should Probably make it so you can view the full pdf the user uploaded somewhere.
-- [ ] I don't think the current backend actually extracts the school. This is pretty important if this application can be used outside of UW-Madison. 
+- [ ] Get the term (e.g. Spring 2026) 
+- [ ] Get the school
+- [ ] Get the late work polocy 
+- [ ] Get the academic integrity policy
+- [ ] Explicity calculate the weights from the information (if not directly given) and then take it out of the grade distribution card 
+- [ ] Try to extract Dates for the course schedule
+- [ ] readings_or_tasks should return a list
 
 
 ## Specific Tabs

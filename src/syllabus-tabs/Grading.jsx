@@ -1,10 +1,20 @@
 import React from "react";
-import { useContext } from "react";
-import AllSyllabiContext from "../context/AllSyllabiContext";
+import { useCurrentSyllabus } from "../context/AllSyllabiContext";
+import { GradeDistributionCard } from "./Components/GradeDistributionCard";
 
 export default function Grading() {
-	const { allSyllabi } = useContext(AllSyllabiContext);
-	const index = Number(localStorage.getItem('currentSyllabusIndex'));
-	const currentSyllabus = allSyllabi[index];
-	return <h1>Grading TODO</h1>;
+	const currentSyllabus = useCurrentSyllabus();
+
+
+
+	if (!currentSyllabus) {
+		return <h1>Staff Loading...</h1>;
+	}
+
+	const gradeMakeup = currentSyllabus.grade_makeup;
+
+	console.log(gradeMakeup)
+
+
+	return <GradeDistributionCard gradeMakeup={gradeMakeup}></GradeDistributionCard>
 }

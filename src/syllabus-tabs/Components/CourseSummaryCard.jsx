@@ -1,5 +1,6 @@
 import React from 'react';
 import { Card } from 'react-bootstrap';
+import SummarizedByAI from './reusable/SummarizedByAI';
 
 function toBullets(text) {
     if (!text || typeof text !== 'string') {
@@ -32,12 +33,14 @@ export function CourseSummaryCard({ summaryText }) {
                 {bullets.length === 0 ? (
                     <p className="mb-0 text-muted">No course summary available.</p>
                 ) : (
-                    <ul className="mb-0 ps-3">
+                    bullets.length !== 1 ? <ul className="mb-0 ps-3">
                         {bullets.map((item, index) => (
                             <li key={`${item}-${index}`}>{item}</li>
                         ))}
-                    </ul>
+                    </ul> : <div>{bullets}</div>
+
                 )}
+                <SummarizedByAI></SummarizedByAI>
             </Card.Body>
         </Card>
     );

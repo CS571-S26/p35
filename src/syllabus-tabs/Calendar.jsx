@@ -1,16 +1,13 @@
 
 import React from "react";
-import { useContext } from "react";
 import { Col, Row } from "react-bootstrap";
-import AllSyllabiContext from "../context/AllSyllabiContext";
+import { useCurrentSyllabus } from "../context/AllSyllabiContext";
 import { ClassMeetingTimesCard } from "./Components/ClassMeetingTimesCard";
 import { ImportantDatesCard } from "./Components/ImportantDatesCard";
-import { WeeklyScheduleCard } from "./Components/WeeklyScheduleCard";
+import { CourseScheduleCard } from "./Components/CourseScheduleCard";
 
 export default function Calendar() {
-    const { allSyllabi } = useContext(AllSyllabiContext);
-    const index = Number(localStorage.getItem('currentSyllabusIndex'));
-    const currentSyllabus = allSyllabi[index];
+    const currentSyllabus = useCurrentSyllabus();
 
     if (!currentSyllabus) {
         return <h1>Calendar TODO</h1>;
@@ -34,7 +31,7 @@ export default function Calendar() {
                 </Col>
 
                 <Col xs={12}>
-                    <WeeklyScheduleCard scheduleOfTopics={scheduleOfTopics} />
+                    <CourseScheduleCard scheduleOfTopics={scheduleOfTopics} />
                 </Col>
             </Row>
         </div>
