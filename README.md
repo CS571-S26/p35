@@ -15,6 +15,7 @@
 - [ ] Explicity calculate the weights from the information (if not directly given) and then take it out of the grade distribution card 
 - [ ] Try to extract Dates for the course schedule
 - [ ] readings_or_tasks should return a list
+- [ ] create a more comprehensive log
 
 
 ## Specific Tabs
