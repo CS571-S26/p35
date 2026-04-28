@@ -17,11 +17,14 @@ function getPercentRows(items) {
         }));
     }
 
+    // Get the total points for the course 
     const totalPoints = items.reduce((sum, item) => {
         const points = getNumber(item?.total_points);
         return sum + (points ?? 0);
     }, 0);
 
+
+    // Return the percentage 
     return items.map((item) => {
         const points = getNumber(item?.total_points) ?? 0;
         const percent = totalPoints > 0 ? (points / totalPoints) * 100 : 0;
