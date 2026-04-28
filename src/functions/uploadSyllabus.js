@@ -14,7 +14,11 @@ export function uploadSyllabus(input) {
 
     // create the data object 
 
-    const backed_url = 'https://tldr-syllabus-backend.onrender.com/upload'
+    // OLD BACKEND hosted on render (keeping just in case)
+    // const backed_url = 'https://tldr-syllabus-backend.onrender.com/upload'
+
+    // New Digitial Ocean Backend
+    const backed_url = 'https://syllabus-app-d5nll.ondigitalocean.app/upload'
     // Return the fetch which will include the JSON
     return fetch(backed_url, {
         method: 'POST', 
