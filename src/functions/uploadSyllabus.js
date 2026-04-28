@@ -9,7 +9,6 @@ export function uploadSyllabus(input) {
     formData.append('file', file);
 
     const backedUrl = 'https://syllabus-app-d5nll.ondigitalocean.app/upload';
-
     return fetch(backedUrl, {
         method: 'POST',
         body: formData
