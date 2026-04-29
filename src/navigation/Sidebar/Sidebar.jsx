@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import { Navbar, Button } from 'react-bootstrap';
 import { useSyllabi } from '../../context/AllSyllabiContext';
 import SyllabusButton from './SyllabusButton';
-import UploadSyllabusModal from '../../components/UploadSyllabusModal';
+import UploadSyllabusModal from './UploadSyllabusModal';
 
 export default function Sidebar(props) {
 

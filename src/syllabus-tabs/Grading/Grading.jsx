@@ -1,6 +1,6 @@
 import React from "react";
-import { useCurrentSyllabus } from "../context/AllSyllabiContext";
-import { GradeDistributionCard } from "./Grading/GradeDistributionCard";
+import { useCurrentSyllabus } from "../../context/AllSyllabiContext";
+import { GradeDistributionCard } from "./GradeDistributionCard";
 
 export default function Grading() {
 	const currentSyllabus = useCurrentSyllabus();
