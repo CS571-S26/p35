@@ -17,14 +17,18 @@ export function uploadSyllabus(input) {
     // OLD BACKEND hosted on render (keeping just in case)
     // const backed_url = 'https://tldr-syllabus-backend.onrender.com/upload'
 
+    // dev testing: 
+    const backed_url = 'http://127.0.0.1:5001/upload'
+
     // New Digitial Ocean Backend
-    const backed_url = 'https://syllabus-app-d5nll.ondigitalocean.app/upload'
+
+    // const backed_url = 'https://syllabus-app-d5nll.ondigitalocean.app/upload'
     // Return the fetch which will include the JSON
     return fetch(backed_url, {
-        method: 'POST', 
+        method: 'POST',
         body: formData
     })
-    .then(r => r.json())
+        .then(r => r.json())
 
 
 
