@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Navbar, Button } from 'react-bootstrap';
-import { useSyllabi } from './context/AllSyllabiContext';
-import SyllabusButton from './components/SyllabusButton';
-import UploadSyllabusModal from './components/UploadSyllabusModal';
+import { useSyllabi } from '../../context/AllSyllabiContext';
+import SyllabusButton from './SyllabusButton';
+import UploadSyllabusModal from '../../components/UploadSyllabusModal';
 
 export default function Sidebar(props) {
 

@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import { Routes, Route } from 'react-router-dom';
-import Layout from './Layout';
-import Overview from './syllabus-tabs/Overview'
-import Calendar from './syllabus-tabs/Calendar'
-import Staff from './syllabus-tabs/Staff'
+import Layout from './navigation/Layout';
+import Overview from './syllabus-tabs/Overview/Overview'
+import Calendar from './syllabus-tabs/Calendar/Calendar'
+import Staff from './syllabus-tabs/Staff/Staff'
 import Grading from './syllabus-tabs/Grading'
 import More from './syllabus-tabs/More'
 import AllSyllabiContext from './context/AllSyllabiContext';

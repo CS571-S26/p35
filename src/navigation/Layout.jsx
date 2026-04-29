@@ -1,8 +1,8 @@
 import React from 'react';
 import { Outlet, Link } from 'react-router-dom';
 import { Navbar, Nav, Button } from 'react-bootstrap';
-import Sidebar from './Sidebar';
-import SyllabusNavigationBar from './SyllabusNavigationBar'
+import Sidebar from './Sidebar/Sidebar';
+import SyllabusNavigationBar from './Sidebar/SyllabusNavigationBar'
 import CourseHeader from './CourseHeader'
 
 export default function Layout() {

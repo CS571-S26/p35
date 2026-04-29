@@ -1,6 +1,6 @@
 import React from 'react';
 import { Card } from 'react-bootstrap';
-import SummarizedByAI from './reusable/SummarizedByAI';
+import SummarizedByAI from '../Components/reusable/SummarizedByAI';
 
 function toBullets(text) {
     if (!text || typeof text !== 'string') {

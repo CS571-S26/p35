@@ -1,8 +1,8 @@
 import React from "react";
 import { Card, Col, Row } from "react-bootstrap";
-import { useCurrentSyllabus } from "../context/AllSyllabiContext";
-import { StaffCard } from "./Components/StaffCard";
-import { contactCard } from "../functions/contactCard";
+import { useCurrentSyllabus } from "../../context/AllSyllabiContext";
+import { StaffCard } from "./StaffCard";
+import { contactCard } from "../../functions/contactCard";
 
 export default function Staff() {
     const currentSyllabus = useCurrentSyllabus();
