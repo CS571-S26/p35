@@ -12,6 +12,7 @@ export default function SyllabusNavigationBar() {
                 <Nav.Link as={Link} to="calendar" className="text-dark" >Calendar</Nav.Link>
                 <Nav.Link as={Link} to="staff" className="text-dark">Staff</Nav.Link>
                 <Nav.Link as={Link} to="grading" className="text-dark">Grading</Nav.Link>
+                <Nav.Link as={Link} to="what-if" className="text-dark">What-If Calculator</Nav.Link>
                 <Nav.Link as={Link} to="more" className="text-dark" >More</Nav.Link>
             </Nav>
         </Navbar>

@@ -8,6 +8,7 @@ import Grading from './syllabus-tabs/Grading'
 import More from './syllabus-tabs/More'
 import AllSyllabiContext from './context/AllSyllabiContext';
 import "./App.css";
+import WhatIfCalc from './syllabus-tabs/WhatIfCalc';
 
 // IMPORTANT: You must import the Bootstrap CSS file!
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -61,8 +62,8 @@ export default function App() {
           <Route path="calendar" element={<Calendar />} />
           <Route path="staff" element={<Staff />} />
           <Route path="grading" element={<Grading />} />
+          <Route path="what-if" element={<WhatIfCalc />} />
           <Route path="more" element={<More />} />
-
         </Route>
       </Routes>
     </AllSyllabiContext.Provider>

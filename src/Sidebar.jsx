@@ -22,6 +22,43 @@ export default function Sidebar(props) {
         changeSyllabus(updatedSyllabi.length - 1);
     };
 
+    const handleRemoveSyllabus = (indexToRemove) => {
+        const course = allSyllabi[indexToRemove];
+        const courseName = course?.course_code ?? 'this syllabus';
+        const shouldRemove = window.confirm(`Remove ${courseName}?`);
+
+        if (!shouldRemove) {
+            return;
+        }
+
+        const updatedSyllabi = allSyllabi.filter((_, index) => index !== indexToRemove);
+        setAllSyllabi(updatedSyllabi);
+        localStorage.setItem('allSyllabi', JSON.stringify(updatedSyllabi));
+        let nextIndex = currentIndex;
+
+        if (updatedSyllabi.length === 0) {
+            nextIndex = 0;
+        } else if (indexToRemove === currentIndex) {
+            nextIndex = Math.min(indexToRemove, updatedSyllabi.length - 1);
+        } else if (indexToRemove < currentIndex) {
+            nextIndex = currentIndex - 1;
+        }
+
+        changeSyllabus(nextIndex);
+    };
+
+    const handleViewPdf = (index) => {
+        const course = allSyllabi[index];
+        const pdfDataUrl = course?.uploaded_pdf_data_url;
+
+        if (!pdfDataUrl) {
+            alert('No PDF is saved for this syllabus.');
+            return;
+        }
+
+        window.open(pdfDataUrl, '_blank', 'noopener,noreferrer');
+    };
+
     return (
 
         <aside
@@ -39,6 +76,8 @@ export default function Sidebar(props) {
                         index={index}
                         isActive={currentIndex === index}
                         onChangeSyllabus={changeSyllabus}
+                        onRemoveSyllabus={handleRemoveSyllabus}
+                        onViewPdf={handleViewPdf}
                     />
                 ))}
 
