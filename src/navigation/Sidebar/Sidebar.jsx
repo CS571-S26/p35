@@ -6,6 +6,8 @@ import SyllabusButton from './SyllabusButton';
 import UploadSyllabusModal from './UploadSyllabusModal';
 
 export default function Sidebar(props) {
+    const expandedWidth = 250;
+    const collapsedWidth = 56;
 
     const { allSyllabi, setAllSyllabi, setCurrentSyllabusIndex, currentIndex } = useSyllabi();
 
@@ -97,57 +99,69 @@ export default function Sidebar(props) {
     };
 
     return (
-        // relative container for the collasable sidebar
-        <div style={{ position: 'relative', display: 'flex', height: '100%' }}>
-            {/* 2. Floating button to re-open the sidebar when it's fully collapsed */}
-            {isCollapsed && (
-                <Button
-                    variant="light"
-                    className="border shadow-sm m-2"
-                    style={{ position: 'absolute', top: 0, left: 0, zIndex: 1050 }}
-                    onClick={() => setIsCollapsed(false)}
-                >
-                    ☰
-                </Button>
-            )}
-
+        <div
+            style={{
+                width: isCollapsed ? `${collapsedWidth}px` : `${expandedWidth}px`,
+                minWidth: isCollapsed ? `${collapsedWidth}px` : `${expandedWidth}px`,
+                transition: 'width 0.3s ease',
+                height: '100%'
+            }}
+        >
             <aside
                 className={`bg-light border-end flex-shrink-0 d-flex flex-column ${isCollapsed ? 'p-0' : 'p-3'}`}
                 style={{ 
-                    width: isCollapsed ? '0px' : '250px', 
-                    minWidth: isCollapsed ? '0px' : '250px',
+                    width: '100%',
+                    minWidth: '100%',
+                    height: '100%',
                     transition: 'all 0.3s ease', // Smooth sliding animation
                     overflow: 'hidden',          // Hides content when width is 0
                     whiteSpace: 'nowrap'         // Prevents text from wrapping awkwardly while shrinking
                 }}
             >
-                <div className="d-flex justify-content-between align-items-center mb-0">
-                    <Navbar.Brand as={Link} to="/">My Courses</Navbar.Brand>
-                    {/* Button to collapse the sidebar */}
-                    <Button 
-                        variant="link" 
-                        className="text-dark p-0 text-decoration-none" 
-                        onClick={() => setIsCollapsed(true)}
-                    >
-                        ◀
-                    </Button>
-                </div>
+                {isCollapsed ? (
+                    <div className="d-flex justify-content-center pt-2">
+                        <Button
+                            variant="light"
+                            className="border shadow-sm"
+                            onClick={() => setIsCollapsed(false)}
+                            aria-label="Expand sidebar"
+                            title="Expand sidebar"
+                        >
+                            ☰
+                        </Button>
+                    </div>
+                ) : (
+                    <>
+                        <div className="d-flex justify-content-between align-items-center mb-0">
+                            <Navbar.Brand as={Link} to="/">My Courses</Navbar.Brand>
+                            <Button 
+                                variant="link" 
+                                className="text-dark p-0 text-decoration-none" 
+                                onClick={() => setIsCollapsed(true)}
+                                aria-label="Collapse sidebar"
+                                title="Collapse sidebar"
+                            >
+                                ◀
+                            </Button>
+                        </div>
 
-                <div className="mt-3 overflow-auto" style={{ minHeight: 0 }}>
-                    {allSyllabi.map((course, index) => (
-                        <SyllabusButton
-                            key={`${course.course_code}-${index}`}
-                            course={course}
-                            index={index}
-                            isActive={currentIndex === index}
-                            onChangeSyllabus={changeSyllabus}
-                            onRemoveSyllabus={handleRemoveSyllabus}
-                            onViewPdf={handleViewPdf}
-                        />
-                    ))}
-                </div>
-                
-                <Button className="mt-auto" onClick={() => setShowModal(true)}>Add</Button>
+                        <div className="mt-3 overflow-auto" style={{ minHeight: 0 }}>
+                            {allSyllabi.map((course, index) => (
+                                <SyllabusButton
+                                    key={`${course.course_code}-${index}`}
+                                    course={course}
+                                    index={index}
+                                    isActive={currentIndex === index}
+                                    onChangeSyllabus={changeSyllabus}
+                                    onRemoveSyllabus={handleRemoveSyllabus}
+                                    onViewPdf={handleViewPdf}
+                                />
+                            ))}
+                        </div>
+                        
+                        <Button className="mt-auto" onClick={() => setShowModal(true)}>Add</Button>
+                    </>
+                )}
 
                 <UploadSyllabusModal 
                     show={showModal} 
