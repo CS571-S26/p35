@@ -1,6 +1,6 @@
 import React from 'react';
 import { Card } from 'react-bootstrap';
-import progressBar from './reusable/ProgressBar';
+import progressBar from '../Components/reusable/ProgressBar';
 
 function getNumber(value) {
     const parsed = Number(value);

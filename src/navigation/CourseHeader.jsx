@@ -1,7 +1,7 @@
 import React from 'react';
 import { Outlet, Link } from 'react-router-dom';
 import { Navbar, Nav } from 'react-bootstrap';
-import { useCurrentSyllabus } from './context/AllSyllabiContext'
+import { useCurrentSyllabus } from '../context/AllSyllabiContext'
 
 
 export default function SyllabusNavigationBar() {

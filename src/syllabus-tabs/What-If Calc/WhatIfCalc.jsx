@@ -1,6 +1,6 @@
 import React, { useEffect, useMemo, useState } from "react";
 import { Alert, Card, Form, Table } from "react-bootstrap";
-import { useCurrentSyllabus } from "../context/AllSyllabiContext";
+import { useCurrentSyllabus } from "../../context/AllSyllabiContext";
 
 function getNumber(value) {
     const parsed = Number(value);

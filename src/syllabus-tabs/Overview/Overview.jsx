@@ -1,12 +1,12 @@
 import React from "react";
 import { Col, Row } from "react-bootstrap";
-import { useCurrentSyllabus } from "../context/AllSyllabiContext";
-import { CourseSummaryCard } from "./Components/CourseSummaryCard";
-import { LearningOutcomeCard } from "./Components/WhatYouWillLearnCard";
-import { PrimaryContactsCard } from "./Components/PrimaryContactsCard";
-import { GradeDistributionCard } from "./Components/GradeDistributionCard";
+import { useCurrentSyllabus } from "../../context/AllSyllabiContext";
+import { CourseSummaryCard } from "./CourseSummaryCard";
+import { LearningOutcomeCard } from "./WhatYouWillLearnCard";
+import { PrimaryContactsCard } from "../Staff/PrimaryContactsCard";
+import { GradeDistributionCard } from "../Grading/GradeDistributionCard";
 
-import { ImportantDatesOverviewCard } from "./Components/ImportantDatesOverviewCard";
+import { ImportantDatesOverviewCard } from "./ImportantDatesOverviewCard";
 
 export default function Overview() {
     const currentSyllabus = useCurrentSyllabus();

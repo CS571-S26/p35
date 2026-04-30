@@ -6,23 +6,22 @@
 - [ ] Should Probably make it so you can view the full pdf the user uploaded somewhere.
 
 ## Backend
-- [ ] Make backend spit out related policies. e.g., under grading would be a late policy or drop policy
+- [X] Make backend spit out related policies. e.g., under grading would be a late policy or drop policy
 - [ ] Make backend more intentional about dates. e.g., week 1, week 2. Specify EXACT dates 
-- [ ] Get the term (e.g. Spring 2026) 
-- [ ] Get the school
-- [ ] Get the late work polocy 
-- [ ] Get the academic integrity policy
-- [ ] Explicity calculate the weights from the information (if not directly given) and then take it out of the grade distribution card 
-- [ ] Try to extract Dates for the course schedule
-- [ ] readings_or_tasks should return a list
+- [X] Get the term (e.g. Spring 2026) 
+- [X] Get the school
+- [X] Get the late work polocy 
+- [X] Get the academic integrity policy
+- [X] Explicity calculate the weights from the information (if not directly given) and then take it out of the grade distribution card 
+- [X] readings_or_tasks should return a list
 - [ ] create a more comprehensive log of what is happening in the backend to debug
 - [ ] Flag heavier weeks? Look through the calendar and see where there is a lot schedule and do some sort of warning maybe 
-- [ ] Resource Type (book/website/etc)
+- [X] Resource Type (book/website/etc)
 
 
 ## Specific Tabs
 ### Overview 
-- [ ] Should probably add a "summarized by AI" under course summary and what you will learn. The disclaimer should probably say something like "AI can make mistakes" 
+- [X] Should probably add a "summarized by AI" under course summary and what you will learn. The disclaimer should probably say something like "AI can make mistakes" 
     - [ ] Under this maybe a button that says "See full unsummarized course content" which the backend extracts anyway
 - [ ] Table of Contents where the user will be able to find what they need where
 
