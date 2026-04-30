@@ -1,6 +1,38 @@
 import * as ics from 'ics';
 
-export const downloadIcsFile = ({ title, date, description = '', location = '', duration }) => {
+function parseTime(time) {
+    if (!time || typeof time !== 'string') {
+        return null;
+    }
+
+    const [hours, minutes] = time.split(':').map(Number);
+
+    if (Number.isNaN(hours) || Number.isNaN(minutes)) {
+        return null;
+    }
+
+    return { hours, minutes };
+}
+
+function getDuration(startTime, endTime) {
+    const start = parseTime(startTime);
+    const end = parseTime(endTime);
+
+    if (!start || !end) {
+        return null;
+    }
+
+    const startMinutes = (start.hours * 60) + start.minutes;
+    const endMinutes = (end.hours * 60) + end.minutes;
+    const durationMinutes = Math.max(0, endMinutes - startMinutes);
+
+    return {
+        hours: Math.floor(durationMinutes / 60),
+        minutes: durationMinutes % 60
+    };
+}
+
+export const downloadIcsFile = ({ title, date, description = '', location = '', duration, startTime, endTime, recurrenceRule }) => {
     // 1. Validate inputs
     if (!title || !date) {
         console.error('downloadIcsFile: Missing required fields (title, date).');
@@ -32,11 +64,19 @@ export const downloadIcsFile = ({ title, date, description = '', location = '', 
 
 
 
-    // If there is not duartion given, default to all day
-    if (duration) {
-        // TIMED EVENT: Add default hours/minutes (e.g., 9:00 AM) and append the duration
-        eventObj.start = [...baseDate, 9, 0];
-        eventObj.duration = duration;
+    if (recurrenceRule) {
+        eventObj.recurrenceRule = recurrenceRule;
+    }
+
+    const parsedStartTime = parseTime(startTime);
+    const calculatedDuration = duration ?? getDuration(startTime, endTime);
+
+    // If there is not duration or start time given, default to all day
+    if (parsedStartTime || calculatedDuration) {
+        eventObj.start = parsedStartTime
+            ? [...baseDate, parsedStartTime.hours, parsedStartTime.minutes]
+            : [...baseDate, 9, 0];
+        eventObj.duration = calculatedDuration ?? { hours: 1 };
     } else {
         // ALL-DAY EVENT: Use the 3-number baseDate, and set the end date to the next day
         const startDateObj = new Date(parts[0], parts[1] - 1, parts[2]);

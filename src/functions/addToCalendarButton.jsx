@@ -9,6 +9,9 @@ export default function AddToCalendar({
     description = '', 
     location = '', 
     duration,
+    startTime,
+    endTime,
+    recurrenceRule,
     buttonText = 'Add to Calendar', // Allows changing button text 
     ...rest // Grabs anything else.
 }) {
@@ -26,7 +29,10 @@ export default function AddToCalendar({
             date,
             description,
             location,
-            duration
+            duration,
+            startTime,
+            endTime,
+            recurrenceRule
         });
     };
 

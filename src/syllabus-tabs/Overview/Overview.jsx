@@ -7,7 +7,7 @@ import { LearningOutcomeCard } from "./WhatYouWillLearnCard";
 import { PrimaryContactsCard } from "../Staff/PrimaryContactsCard";
 import { GradeOverviewCard } from "./GradeOverviewCard";
 
-import { ImportantDatesOverviewCard } from "./ImportantDatesOverviewCard";
+import { ImportantDatesCard } from "../Calendar/ImportantDatesCard";
 
 export default function Overview() {
     const currentSyllabus = useCurrentSyllabus();
@@ -57,7 +57,7 @@ export default function Overview() {
                     />
                 </Col>
                 <Col xs={12}>
-                    <ImportantDatesOverviewCard importantDates={currentSyllabus.important_dates} />
+                    <ImportantDatesCard importantDates={currentSyllabus.important_dates} />
                 </Col>
             </Row>
         </div>
