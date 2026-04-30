@@ -2,9 +2,10 @@ import React from "react";
 import { Col, Row } from "react-bootstrap";
 import { useCurrentSyllabus } from "../../context/AllSyllabiContext";
 import { CourseSummaryCard } from "./CourseSummaryCard";
+import { CourseInfoCard } from "./CourseInfoCard";
 import { LearningOutcomeCard } from "./WhatYouWillLearnCard";
 import { PrimaryContactsCard } from "../Staff/PrimaryContactsCard";
-import { GradeDistributionCard } from "../Grading/GradeDistributionCard";
+import { GradeOverviewCard } from "./GradeOverviewCard";
 
 import { ImportantDatesOverviewCard } from "./ImportantDatesOverviewCard";
 
@@ -18,11 +19,22 @@ export default function Overview() {
 
     return (
         <div>
-            {/* <h1 className="mb-4">{currentSyllabus.course_code}: {currentSyllabus.course_title}</h1> */}
+            <Row className="g-3 mb-3">
+                <Col xs={12}>
+                    <CourseInfoCard
+                        credits={currentSyllabus.credits}
+                        expectedHoursPerWeek={currentSyllabus.expected_hours_per_week}
+                        gradingScheme={currentSyllabus.grading_scheme}
+                    />
+                </Col>
+            </Row>
 
             <Row className="g-3 mb-3">
                 <Col xs={12} md={6}>
-                    <CourseSummaryCard summaryText={currentSyllabus.course_summary} />
+                    <CourseSummaryCard
+                        summaryText={currentSyllabus.course_summary}
+                        descriptionText={currentSyllabus.course_description}
+                    />
                 </Col>
                 <Col xs={12} md={6}>
                     <LearningOutcomeCard learningText={currentSyllabus.what_you_will_learn} />
@@ -39,10 +51,10 @@ export default function Overview() {
 
             <Row className="g-3">
                 <Col xs={12}>
-                    <GradeDistributionCard gradeMakeup={currentSyllabus.grade_makeup} />
-                </Col>
-                <Col xs={12}>
-                    <GradeDistributionCard gradeMakeup={currentSyllabus.grade_makeup} />
+                    <GradeOverviewCard
+                        gradeMakeup={currentSyllabus.grade_makeup}
+                        gradingScheme={currentSyllabus.grading_scheme}
+                    />
                 </Col>
                 <Col xs={12}>
                     <ImportantDatesOverviewCard importantDates={currentSyllabus.important_dates} />

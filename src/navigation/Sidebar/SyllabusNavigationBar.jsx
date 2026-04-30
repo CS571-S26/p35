@@ -1,19 +1,38 @@
 import React from 'react';
-import { Outlet, Link, useMatch } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import { Navbar, Nav } from 'react-bootstrap';
 
 export default function SyllabusNavigationBar() {
+    const location = useLocation();
+    const activeTab = location.pathname.split('/').filter(Boolean).at(-1) ?? 'overview';
 
+    const tabs = [
+        { to: 'overview', label: 'Overview' },
+        { to: 'calendar', label: 'Calendar' },
+        { to: 'staff', label: 'Staff' },
+        { to: 'grading', label: 'Grading' },
+        { to: 'what-if', label: 'What-If Calculator' },
+        { to: 'more', label: 'More' }
+    ];
 
     return (
         <Navbar className="border-bottom px-1 flex-shrink-0">
             <Nav className="flex-row gap-2">
-                <Nav.Link as={Link} to="overview" className="text-dark" >Overview</Nav.Link>
-                <Nav.Link as={Link} to="calendar" className="text-dark" >Calendar</Nav.Link>
-                <Nav.Link as={Link} to="staff" className="text-dark">Staff</Nav.Link>
-                <Nav.Link as={Link} to="grading" className="text-dark">Grading</Nav.Link>
-                <Nav.Link as={Link} to="what-if" className="text-dark">What-If Calculator</Nav.Link>
-                <Nav.Link as={Link} to="more" className="text-dark" >More</Nav.Link>
+                {tabs.map((tab) => {
+                    const isActive = activeTab === tab.to || (activeTab === 'p35' && tab.to === 'overview');
+
+                    return (
+                        <Nav.Link
+                            key={tab.to}
+                            as={Link}
+                            to={tab.to}
+                            className={isActive ? 'text-primary fw-semibold' : 'text-dark'}
+                            style={isActive ? { borderBottom: '3px solid #0d6efd' } : undefined}
+                        >
+                            {tab.label}
+                        </Nav.Link>
+                    );
+                })}
             </Nav>
         </Navbar>
 

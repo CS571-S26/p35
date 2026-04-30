@@ -18,7 +18,7 @@ export default function Staff() {
 
     return (
         <div>
-            <h1 className="mb-4">Staff</h1>
+            
             <h2 className="h4 mb-3">Instructors</h2>
             {professors.length === 0 ? (
                 <p className="mb-4">No instructors listed.</p>

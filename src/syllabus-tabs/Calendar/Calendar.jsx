@@ -19,7 +19,7 @@ export default function Calendar() {
 
     return (
         <div>
-            <h1 className="mb-4">Calendar</h1>
+            
 
             <Row className="g-3">
                 <Col xs={12}>

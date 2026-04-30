@@ -1,5 +1,6 @@
 import React from 'react';
-import { Card, ListGroup } from 'react-bootstrap';
+import { Card } from 'react-bootstrap';
+import Policy from './reusable/Policy';
 
 export function PoliciesCard({ policies }) {
     const policyList = Array.isArray(policies) ? policies : [];
@@ -11,14 +12,16 @@ export function PoliciesCard({ policies }) {
                 {policyList.length === 0 ? (
                     <p className="mb-0 text-muted">No policy information available.</p>
                 ) : (
-                    <ListGroup variant="flush">
+                    <div className="d-flex flex-column gap-3">
                         {policyList.map((policy, index) => (
-                            <ListGroup.Item key={`${policy.policy_name}-${index}`} className="px-0">
-                                <h3 className="h6 mb-1">{policy.policy_name ?? 'Policy'}</h3>
-                                <p className="mb-0 text-secondary">{policy.summary ?? 'No summary provided.'}</p>
-                            </ListGroup.Item>
+                            <Policy
+                                key={`${policy.policy_name}-${index}`}
+                                color="#1f5be6"
+                                title={policy.policy_name}
+                                text={policy.summary}
+                            />
                         ))}
-                    </ListGroup>
+                    </div>
                 )}
             </Card.Body>
         </Card>

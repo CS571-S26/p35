@@ -51,3 +51,8 @@
 .card {
   transition: box-shadow 180ms ease, transform 180ms ease;
 }
+
+
+h1 {
+  font-weight: 800;
+}

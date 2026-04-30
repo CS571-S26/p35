@@ -1,6 +1,5 @@
 import React from 'react';
-import { Outlet, Link } from 'react-router-dom';
-import { Navbar, Nav, Button } from 'react-bootstrap';
+import { Outlet } from 'react-router-dom';
 import Sidebar from './Sidebar/Sidebar';
 import SyllabusNavigationBar from './Sidebar/SyllabusNavigationBar'
 import CourseHeader from './CourseHeader'

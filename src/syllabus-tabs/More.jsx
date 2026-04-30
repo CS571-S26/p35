@@ -1,9 +1,10 @@
 import React from "react";
 import { useCurrentSyllabus } from "../context/AllSyllabiContext";
 import { PoliciesCard } from "./Components/PoliciesCard";
+import { ResourcesCard } from "./Components/ResourcesCard";
 
 
-export default function More(props) {
+export default function More() {
 	const currentSyllabus = useCurrentSyllabus();
 
 	if (!currentSyllabus) {
@@ -11,8 +12,9 @@ export default function More(props) {
 	}
 
 	return (
-		<div>
-			<h1 className="mb-4">More</h1>
+		<div className="d-flex flex-column gap-4">
+			
+			<ResourcesCard resources={currentSyllabus.resources} />
 			<PoliciesCard policies={currentSyllabus.policies} />
 		</div>
 	);

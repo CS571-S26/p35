@@ -1,6 +1,8 @@
 import React, { useEffect, useMemo, useState } from "react";
 import { Alert, Card, Form, Table } from "react-bootstrap";
 import { useCurrentSyllabus } from "../../context/AllSyllabiContext";
+import progressBar from "../Components/reusable/ProgressBar";
+import EstimatedLetterGrade from "./EstimatedLetterGrade";
 
 function getNumber(value) {
     const parsed = Number(value);
@@ -60,6 +62,10 @@ function formatPercent(value) {
     return `${value.toFixed(1)}%`;
 }
 
+function clampPercent(value) {
+    return Math.max(0, Math.min(100, value));
+}
+
 function isNaInput(value) {
     return typeof value === "string" && value.trim().toUpperCase() === "NA";
 }
@@ -86,6 +92,13 @@ function getTargetGradeOptions(gradeCutoffs) {
         .sort((a, b) => b.minPercent - a.minPercent);
 }
 
+function getDefaultScores(assignmentRows) {
+    return assignmentRows.reduce((defaults, _row, index) => {
+        defaults[index] = "100";
+        return defaults;
+    }, {});
+}
+
 export default function WhatIfCalculator() {
     const currentSyllabus = useCurrentSyllabus();
     const [scores, setScores] = useState({});
@@ -100,8 +113,8 @@ export default function WhatIfCalculator() {
     }, [currentSyllabus]);
 
     useEffect(() => {
-        setScores({});
-    }, [currentSyllabus]);
+        setScores(getDefaultScores(assignmentRows));
+    }, [assignmentRows]);
 
     useEffect(() => {
         setDesiredGrade(targetGradeOptions[0]?.label ?? "");
@@ -194,7 +207,7 @@ export default function WhatIfCalculator() {
 
     return (
         <div>
-            <h1 className="mb-4">What-If Calculator</h1>
+
 
             <Card className="mb-3">
                 <Card.Body>
@@ -236,7 +249,14 @@ export default function WhatIfCalculator() {
                                                     </div>
                                                 ) : null}
                                             </td>
-                                            <td>{formatPercent(row.weight)}</td>
+                                            <td>
+                                                <div style={{ minWidth: "140px" }}>
+                                                    <div className="mb-2 fw-semibold text-dark">
+                                                        {formatPercent(row.weight)}
+                                                    </div>
+                                                    {progressBar(clampPercent(row.weight))}
+                                                </div>
+                                            </td>
                                             <td style={{ maxWidth: "220px" }}>
                                                 <Form.Control
                                                     type="text"
@@ -248,9 +268,14 @@ export default function WhatIfCalculator() {
                                             </td>
                                             {hasNaInputs ? (
                                                 <td>
-                                                    {isNaInput(scores[index]) && neededScoreForNa !== null
-                                                        ? formatPercent(Math.max(0, neededScoreForNa))
-                                                        : "—"}
+                                                    {isNaInput(scores[index]) && neededScoreForNa !== null ? (
+                                                        <div style={{ minWidth: "140px" }}>
+                                                            <div className="mb-2 fw-semibold text-dark">
+                                                                {formatPercent(Math.max(0, neededScoreForNa))}
+                                                            </div>
+                                                            {progressBar(clampPercent(neededScoreForNa))}
+                                                        </div>
+                                                    ) : "—"}
                                                 </td>
                                             ) : null}
                                         </tr>
@@ -261,12 +286,12 @@ export default function WhatIfCalculator() {
                     </Card>
 
                     <Card className="mt-3">
-                        <Card.Body>
+                        <Card.Body className="text-center">
                             {hasNaInputs ? (
                                 <>
                                     <Card.Title className="h4">Desired Grade</Card.Title>
 
-                                    <Form.Group className="mb-3" style={{ maxWidth: "240px" }}>
+                                    <Form.Group className="mx-auto mb-3" style={{ maxWidth: "240px" }}>
                                         <Form.Select
                                             value={desiredGrade}
                                             onChange={(e) => setDesiredGrade(e.target.value)}
@@ -288,9 +313,14 @@ export default function WhatIfCalculator() {
                                             You would need more than 100% on the assignments marked <strong>NA</strong> to reach <strong>{desiredGrade}</strong>.
                                         </p>
                                     ) : (
-                                        <p className="mb-0 text-secondary">
-                                            To earn at least <strong>{desiredGrade}</strong>, score at least <strong>{formatPercent(Math.max(0, neededScoreForNa))}</strong> on each assignment marked <strong>NA</strong>.
-                                        </p>
+                                        <>
+                                            <div className="mx-auto mb-3" style={{ maxWidth: "360px" }}>
+                                                {progressBar(clampPercent(neededScoreForNa))}
+                                            </div>
+                                            <p className="mb-0 text-secondary">
+                                                To earn at least <strong>{desiredGrade}</strong>, score at least <strong>{formatPercent(Math.max(0, neededScoreForNa))}</strong> on each assignment marked <strong>NA</strong>.
+                                            </p>
+                                        </>
                                     )}
                                 </>
                             ) : (
@@ -301,15 +331,15 @@ export default function WhatIfCalculator() {
                                         {whatIfGrade === null ? "N/A" : formatPercent(whatIfGrade)}
                                     </div>
 
-                                    {letterGrade ? (
-                                        <p className="mb-0 text-secondary">
-                                            Estimated letter grade: <strong>{letterGrade}</strong>
-                                        </p>
-                                    ) : (
-                                        <p className="mb-0 text-secondary">
-                                            Estimated letter grade unavailable.
-                                        </p>
-                                    )}
+                                    {whatIfGrade !== null ? (
+                                        <div className="mx-auto mb-3" style={{ maxWidth: "360px" }}>
+                                            {progressBar(clampPercent(whatIfGrade))}
+                                        </div>
+                                    ) : null}
+
+                                    <div className="d-flex justify-content-center">
+                                        <EstimatedLetterGrade letterGrade={letterGrade} />
+                                    </div>
                                 </>
                             )}
                         </Card.Body>

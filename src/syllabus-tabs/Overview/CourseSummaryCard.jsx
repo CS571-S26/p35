@@ -1,5 +1,5 @@
-import React from 'react';
-import { Card } from 'react-bootstrap';
+import React, { useState } from 'react';
+import { Button, Card, Modal } from 'react-bootstrap';
 import SummarizedByAI from '../Components/reusable/SummarizedByAI';
 
 function toBullets(text) {
@@ -23,8 +23,10 @@ function toBullets(text) {
     return [text.trim()];
 }
 
-export function CourseSummaryCard({ summaryText }) {
+export function CourseSummaryCard({ summaryText, descriptionText }) {
+    const [showDescription, setShowDescription] = useState(false);
     const bullets = toBullets(summaryText);
+    const hasDescription = Boolean(descriptionText);
 
     return (
         <Card className="h-100">
@@ -40,8 +42,27 @@ export function CourseSummaryCard({ summaryText }) {
                     </ul> : <div>{bullets}</div>
 
                 )}
-                <SummarizedByAI></SummarizedByAI>
+                <div className="d-flex align-items-center justify-content-between gap-3 flex-wrap mt-3">
+                    <SummarizedByAI></SummarizedByAI>
+                    <Button
+                        variant="outline-primary"
+                        size="sm"
+                        disabled={!hasDescription}
+                        onClick={() => setShowDescription(true)}
+                    >
+                        Read full course description
+                    </Button>
+                </div>
             </Card.Body>
+
+            <Modal show={showDescription} onHide={() => setShowDescription(false)} centered>
+                <Modal.Header closeButton>
+                    <Modal.Title>Full Course Description</Modal.Title>
+                </Modal.Header>
+                <Modal.Body>
+                    <p className="mb-0">{descriptionText ?? 'No course description available.'}</p>
+                </Modal.Body>
+            </Modal>
         </Card>
     );
 }

@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import { Routes, Route } from 'react-router-dom';
 import Layout from './navigation/Layout';
 import Overview from './syllabus-tabs/Overview/Overview'
@@ -18,34 +18,20 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 export default function App() {
 
   // Store all loaded syllabi 
-  const [allSyllabi, setAllSyllabi] = useState([]);
-  const [currentSyllabusIndex, setCurrentSyllabusIndex] = useState(0)
-  const [hasLoadedStorage, setHasLoadedStorage] = useState(false);
-
-
-  // On load, check to see if the user has any data in local storage
-  useEffect(() => {
-    // Try to load syllabi from localStorage first
+  const [allSyllabi, setAllSyllabi] = useState(() => {
     const storedSyllabi = localStorage.getItem('allSyllabi');
+
     if (storedSyllabi) {
       try {
-        setAllSyllabi(JSON.parse(storedSyllabi));
+        return JSON.parse(storedSyllabi);
       } catch (error) {
         console.error('Error parsing stored syllabi:', error);
-        setAllSyllabi([]);
       }
     }
 
-    if (localStorage.getItem('currentSyllabusIndex') === null) {
-      localStorage.setItem('currentSyllabusIndex', '0');
-    }
-
-    setHasLoadedStorage(true);
-  }, []);
-
-  if (!hasLoadedStorage) {
-    return null;
-  }
+    return [];
+  });
+  const [, setCurrentSyllabusIndex] = useState(() => Number(localStorage.getItem('currentSyllabusIndex')) || 0)
 
   const hasSyllabi = allSyllabi.length > 0;
 
