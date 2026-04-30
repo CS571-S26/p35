@@ -4,7 +4,7 @@ import { useSyllabi } from './context/AllSyllabiContext';
 import UploadSyllabusModal from './navigation/Sidebar/UploadSyllabusModal';
 import testData from './assets/tests/cs571.json';
 import testData2 from './assets/tests/econ.json';
-import testData3 from './assets/tests/english.json';
+import testData3 from './assets/tests/math.json';
 
 export default function Welcome() {
     const { allSyllabi, setAllSyllabi, setCurrentSyllabusIndex } = useSyllabi();

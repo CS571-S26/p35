@@ -1,394 +1,422 @@
 {
-    "university_name": "University of Wisconsin-Madison",
-    "course_code": "CS571",
-    "course_title": "Building User Interfaces",
-    "credits": "3",
-    "course_description": "Introduces software development of user interfaces (UIs). Build competence in implementing UIs using state-of-the-art (1) UI paradigms, such as event-driven interfaces, direct-manipulation interfaces, and dialogue-based interaction; (2) methods for capturing, interpreting, and responding to different forms of user input and states, including pointing, text entry, speech, touch, gestures, user activity, context, and physiological states; and (3) platform-specific UI development APIs, frameworks, and toolkits for multiple platforms including web/mobile/desktop interfaces, natural user interfaces, and voice user interfaces. Learn about the fundamental concepts, technologies, algorithms, and methods in building user interfaces, implement UIs using of state-of-the-art UI development tools, and build a UI development portfolio.",
-    "course_summary": "- Introduction to software development of user interfaces (UIs)\n- Implementing state-of-the-art UI paradigms\n- Methods for capturing, interpreting, and responding to various forms of user input\n- Platform-specific UI development APIs and toolkits\n- Fundamental concepts, technologies, and methods in UI development\n- Building a UI development portfolio",
-    "learning_outcomes": "- Program front-end user-facing software using contemporary languages, frameworks, and libraries.\n- Engage in design thinking and communicate conceptual design solutions.\n- Prototype and develop UIs for web, mobile, and VUIs.\n- Follow user-centered design principles to build, assess, and refine solutions.\n- Create effective visual designs, layouts, and navigation structures.",
-    "what_you_will_learn": null,
-    "grading_scheme": "cumulative_points",
-    "semester_year": 2026,
-    "semester_season": "Spring",
-    "staff": [
-        {
-            "name": "Cole Nelson",
-            "role": "Instructor",
-            "email": "ctnelson2@wisc.edu",
-            "phone": null,
-            "office": null,
-            "officeHours": null,
-            "communication_preference": null
-        },
-        {
-            "name": "Kathryn Jensen",
-            "role": "Instructor",
-            "email": "kjensen29@wisc.edu",
-            "phone": null,
-            "office": null,
-            "officeHours": null,
-            "communication_preference": null
-        },
-        {
-            "name": "Hongtao Hao",
-            "role": "TA",
-            "email": "hongtaoh@cs.wisc.edu",
-            "phone": null,
-            "office": null,
-            "officeHours": null,
-            "communication_preference": null
-        },
-        {
-            "name": "Zhaoyang Liu",
-            "role": "TA",
-            "email": "zliu934@wisc.edu",
-            "phone": null,
-            "office": null,
-            "officeHours": null,
-            "communication_preference": null
-        },
-        {
-            "name": "Amy Koike",
-            "role": "TA",
-            "email": "ekoike@wisc.edu",
-            "phone": null,
-            "office": null,
-            "officeHours": null,
-            "communication_preference": null
-        },
-        {
-            "name": "Kassie Povinelli",
-            "role": "TA",
-            "email": "jpovinelli@wisc.edu",
-            "phone": null,
-            "office": null,
-            "officeHours": null,
-            "communication_preference": null
-        },
-        {
-            "name": "Heidi Spalitta",
-            "role": "TA",
-            "email": "hspalitta@wisc.edu",
-            "phone": null,
-            "office": null,
-            "officeHours": null,
-            "communication_preference": null
-        }
-    ],
+    "additional_notes": "There is a peer evaluation component for group projects, and students are encouraged to utilize mental health services if needed.",
     "class_sessions": [
         {
-            "type": "Lecture",
             "day_of_week": "Tuesday",
+            "end_time_24h": "09:15",
             "start_time_24h": "08:00",
-            "end_time_24h": "09:15"
+            "type": "Lecture"
         },
         {
-            "type": "Lecture",
             "day_of_week": "Thursday",
+            "end_time_24h": "09:15",
             "start_time_24h": "08:00",
-            "end_time_24h": "09:15"
+            "type": "Lecture"
         },
         {
-            "type": "Lecture",
             "day_of_week": "Tuesday",
+            "end_time_24h": "10:45",
             "start_time_24h": "09:30",
-            "end_time_24h": "10:45"
+            "type": "Lecture"
         },
         {
-            "type": "Lecture",
             "day_of_week": "Thursday",
+            "end_time_24h": "10:45",
             "start_time_24h": "09:30",
-            "end_time_24h": "10:45"
+            "type": "Lecture"
+        }
+    ],
+    "course_code": "CS571",
+    "course_description": "Introduces software development of user interfaces (UIs). Build competence in implementing UIs using state-of-the-art UI paradigms, capturing and responding to different forms of user input, and utilizing platform-specific UI development APIs, frameworks, and tools.",
+    "course_summary": "The course focuses on developing competence in building user interfaces using state-of-the-art paradigms, methods for handling various user inputs, and platform-specific tools. It covers UI development for web, mobile, and voice interfaces, and aims to develop a UI development portfolio.",
+    "course_title": "Building User Interfaces",
+    "credits": "3",
+    "expected_hours_per_week": "Approximately 6 hours per week expected outside of class time.",
+    "grade_cutoffs": [
+        {
+            "letter_grade": "A",
+            "max_percent": 100,
+            "min_percent": 94
+        },
+        {
+            "letter_grade": "AB",
+            "max_percent": 94,
+            "min_percent": 88
+        },
+        {
+            "letter_grade": "B",
+            "max_percent": 88,
+            "min_percent": 82
+        },
+        {
+            "letter_grade": "BC",
+            "max_percent": 82,
+            "min_percent": 76
+        },
+        {
+            "letter_grade": "C",
+            "max_percent": 76,
+            "min_percent": 70
+        },
+        {
+            "letter_grade": "D",
+            "max_percent": 70,
+            "min_percent": 60
+        },
+        {
+            "letter_grade": "F",
+            "max_percent": 60,
+            "min_percent": 0
         }
     ],
     "grade_makeup": [
         {
             "assignment_category": "Homework",
             "count": 12,
-            "weight_percentage": null,
-            "total_points": 34.0,
-            "drop_lowest": 0
+            "drop_lowest": 0,
+            "total_points": 34,
+            "weight_percentage": 34
         },
         {
             "assignment_category": "In-Class Activities",
             "count": 11,
-            "weight_percentage": null,
-            "total_points": 10.0,
-            "drop_lowest": 1
+            "drop_lowest": 1,
+            "total_points": 10,
+            "weight_percentage": 10
         },
         {
             "assignment_category": "Web Project",
             "count": 1,
-            "weight_percentage": null,
-            "total_points": 10.0,
-            "drop_lowest": 0
+            "drop_lowest": 0,
+            "total_points": 10,
+            "weight_percentage": 10
         },
         {
             "assignment_category": "Midterm Exam",
             "count": 1,
-            "weight_percentage": null,
-            "total_points": 20.0,
-            "drop_lowest": 0
+            "drop_lowest": 0,
+            "total_points": 20,
+            "weight_percentage": 20
         },
         {
             "assignment_category": "Final Exam",
             "count": 1,
-            "weight_percentage": null,
-            "total_points": 25.0,
-            "drop_lowest": 0
+            "drop_lowest": 0,
+            "total_points": 25,
+            "weight_percentage": 25
         },
         {
             "assignment_category": "Attendance",
             "count": 1,
-            "weight_percentage": null,
-            "total_points": 1.0,
-            "drop_lowest": 0
+            "drop_lowest": 0,
+            "total_points": 1,
+            "weight_percentage": 1
         }
     ],
-    "grade_cutoffs": [
-        {
-            "letter_grade": "A",
-            "min_percent": 94.0,
-            "max_percent": 100.0
-        },
-        {
-            "letter_grade": "AB",
-            "min_percent": 88.0,
-            "max_percent": 93.99
-        },
-        {
-            "letter_grade": "B",
-            "min_percent": 82.0,
-            "max_percent": 87.99
-        },
-        {
-            "letter_grade": "BC",
-            "min_percent": 76.0,
-            "max_percent": 81.99
-        },
-        {
-            "letter_grade": "C",
-            "min_percent": 70.0,
-            "max_percent": 75.99
-        },
-        {
-            "letter_grade": "D",
-            "min_percent": 60.0,
-            "max_percent": 69.99
-        },
-        {
-            "letter_grade": "F",
-            "min_percent": 0.0,
-            "max_percent": 59.99
-        }
-    ],
+    "grading_scheme": "cumulative_points",
     "important_dates": [
         {
-            "event": "Midterm Exam",
             "date_iso": "2026-03-12",
-            "is_deadline": true,
+            "event": "Midterm Exam",
             "grace_period_hours": null,
+            "is_deadline": true,
             "late_policy_penalty": null
         },
         {
-            "event": "Final Exam",
             "date_iso": "2026-05-03",
-            "is_deadline": true,
+            "event": "Final Exam",
             "grace_period_hours": null,
+            "is_deadline": true,
+            "late_policy_penalty": null
+        },
+        {
+            "date_iso": "2026-03-04",
+            "event": "Web Project Proposal Due",
+            "grace_period_hours": null,
+            "is_deadline": true,
             "late_policy_penalty": null
         }
     ],
-    "schedule_of_topics": [
-        {
-            "week_or_date": "Week 1",
-            "topic_name": "Intro to CS571 & Design Thinking",
-            "readings_or_tasks": [
-                "HW0 (1 pt)",
-                "ICA A"
-            ]
-        },
-        {
-            "week_or_date": "Week 2",
-            "topic_name": "Web Dev Basics 1 & Web Dev Basics 2",
-            "readings_or_tasks": [
-                "HW1"
-            ]
-        },
-        {
-            "week_or_date": "Week 3",
-            "topic_name": "Web Dev Basics 3 & Visual Design",
-            "readings_or_tasks": [
-                "HW2",
-                "ICA B"
-            ]
-        },
-        {
-            "week_or_date": "Week 4",
-            "topic_name": "Web Dev 1 & Web Design",
-            "readings_or_tasks": [
-                "HW3",
-                "ICA C"
-            ]
-        },
-        {
-            "week_or_date": "Week 5",
-            "topic_name": "Web Dev 2 & Interaction Design",
-            "readings_or_tasks": [
-                "HW4",
-                "ICA D"
-            ]
-        },
-        {
-            "week_or_date": "Week 6",
-            "topic_name": "Web Dev 3 & Expert Evaluation",
-            "readings_or_tasks": [
-                "HW5",
-                "ICA E"
-            ]
-        },
-        {
-            "week_or_date": "Week 7",
-            "topic_name": "Web Dev 4 & Accessibility",
-            "readings_or_tasks": [
-                "HW6",
-                "ICA F"
-            ]
-        },
-        {
-            "week_or_date": "Week 8",
-            "topic_name": "Web Dev 5 & Midterm Exam",
-            "readings_or_tasks": []
-        },
-        {
-            "week_or_date": "Week 9",
-            "topic_name": "Mobile Dev 1 & Mobile Design",
-            "readings_or_tasks": [
-                "HW7",
-                "ICA G"
-            ]
-        },
-        {
-            "week_or_date": "Week 10",
-            "topic_name": "Mobile Dev 2 & Prototyping",
-            "readings_or_tasks": [
-                "HW8",
-                "ICA H"
-            ]
-        },
-        {
-            "week_or_date": "Week 11",
-            "topic_name": "Spring Break",
-            "readings_or_tasks": []
-        },
-        {
-            "week_or_date": "Week 11",
-            "topic_name": "Mobile Dev 3 & VUI Design",
-            "readings_or_tasks": [
-                "HW9",
-                "ICA I"
-            ]
-        },
-        {
-            "week_or_date": "Week 12",
-            "topic_name": "Agent Dev 1 & Designing Agents",
-            "readings_or_tasks": [
-                "HW10",
-                "ICA J"
-            ]
-        },
-        {
-            "week_or_date": "Week 13",
-            "topic_name": "Agent Dev 2 & User Evaluation",
-            "readings_or_tasks": [
-                "HW11",
-                "ICA K"
-            ]
-        },
-        {
-            "week_or_date": "Week 14",
-            "topic_name": "Full Stack Dev & Bonus Security Lecture",
-            "readings_or_tasks": [
-                "Bonus Activity"
-            ]
-        },
-        {
-            "week_or_date": "Week 15",
-            "topic_name": "Final Exam",
-            "readings_or_tasks": []
-        }
-    ],
+    "learning_outcomes": "- Program front-end user-facing software elements using state-of-the-art programming languages, frameworks, and libraries.\n- Engage in design thinking to ideate and communicate UI design solutions.\n- Prototype and develop UIs for web, mobile, and VUIs.\n- Follow user-centered design principles to iteratively build, assess, and refine design solutions.\n- Create visual designs, layouts, and navigation structures using design languages and elements.",
     "policies": [
         {
-            "policy_name": "Academic Integrity",
-            "summary": "AI use is restricted on homeworks and ICAs, with detailed guidelines on how to use AI as a tutor, not as a completion tool. Academic misconduct could lead to disciplinary actions."
+            "policy_name": "Late Work",
+            "summary": "Students have 10 late days for homework; each day late beyond this incurs a 10% penalty. No late submissions for ICAs and web project milestones beyond one day are accepted, with a 5% penalty per hour."
         },
         {
-            "policy_name": "Late Work Policy",
-            "summary": "10 late days available for homeworks; 10% penalty per day after all late days are used. No late submissions for ICAs. Web project timelines are strict with 5% off per late hour."
+            "policy_name": "Academic Integrity",
+            "summary": "AI use is restricted on homework and ICAs and is treated as proprietary company information not to be shared with AI tools. AI is permitted for the web project, but students must be able to explain their work."
         },
         {
             "policy_name": "Accommodations",
-            "summary": "Students needing special accommodations should inform the instructor by the end of the third week or as soon as possible after a disability is recognized."
+            "summary": "Students requiring accommodations must inform the instructor by week three or as soon as possible, for timely implementation of necessary accommodations."
         }
     ],
     "resources": [
         {
+            "details": null,
+            "isbn": null,
+            "link": null,
             "name": "Mozilla Developer Network",
-            "resource_type": "website",
-            "isbn": null,
-            "link": null,
-            "details": "Technical documentation for web development."
+            "resource_type": "website"
         },
         {
+            "details": null,
+            "isbn": null,
+            "link": null,
             "name": "React.dev",
-            "resource_type": "website",
-            "isbn": null,
-            "link": null,
-            "details": "Technical documentation for React."
+            "resource_type": "website"
         },
         {
+            "details": null,
+            "isbn": null,
+            "link": null,
             "name": "ReactNative.dev",
-            "resource_type": "website",
-            "isbn": null,
-            "link": null,
-            "details": "Technical documentation for React Native."
+            "resource_type": "website"
         },
         {
+            "details": "by Marijn Haverbeke, available online for free.",
+            "isbn": null,
+            "link": "https://eloquentjavascript.net",
             "name": "Eloquent JavaScript",
-            "resource_type": "book",
-            "isbn": null,
-            "link": "https://eloquentjavascript.net/",
-            "details": "A book by Marijn Haverbeke, available online for free."
+            "resource_type": "book"
         },
         {
+            "details": "by Don Norman, recommended but not required.",
+            "isbn": null,
+            "link": null,
             "name": "The Design of Everyday Things",
-            "resource_type": "book",
-            "isbn": null,
-            "link": null,
-            "details": "By Don Norman, purchase not required."
+            "resource_type": "book"
         },
         {
+            "details": "Required for attendance.",
+            "isbn": null,
+            "link": null,
             "name": "TopHat",
-            "resource_type": "software",
-            "isbn": null,
-            "link": null,
-            "details": "Used for attendance tracking."
+            "resource_type": "software"
         },
         {
+            "details": "Development environment.",
+            "isbn": null,
+            "link": null,
             "name": "VSCode",
-            "resource_type": "software",
-            "isbn": null,
-            "link": null,
-            "details": "Code editor for the course."
+            "resource_type": "software"
         },
         {
-            "name": "NodeJS 24 with NPM 11",
-            "resource_type": "software",
+            "details": "For JavaScript development.",
             "isbn": null,
             "link": null,
-            "details": "Requires installation for development."
+            "name": "NodeJS 24 with NPM 11",
+            "resource_type": "software"
+        },
+        {
+            "details": "For API testing.",
+            "isbn": null,
+            "link": null,
+            "name": "Postman",
+            "resource_type": "software"
+        },
+        {
+            "details": "Version control.",
+            "isbn": null,
+            "link": null,
+            "name": "Git",
+            "resource_type": "software"
+        },
+        {
+            "details": "For mobile development.",
+            "isbn": null,
+            "link": null,
+            "name": "Expo",
+            "resource_type": "software"
         }
     ],
-    "expected_hours_per_week": "6",
-    "additional_notes": null
+    "schedule_of_topics": [
+        {
+            "readings_or_tasks": [
+                "HW0",
+                "ICA A"
+            ],
+            "topic_name": "Intro to CS571 & Design Thinking",
+            "week_or_date": "Week 1"
+        },
+        {
+            "readings_or_tasks": [
+                "HW1"
+            ],
+            "topic_name": "Web Dev Basics 1 & Web Dev Basics 2",
+            "week_or_date": "Week 2"
+        },
+        {
+            "readings_or_tasks": [
+                "HW2",
+                "ICA B"
+            ],
+            "topic_name": "Web Dev Basics 3 & Visual Design",
+            "week_or_date": "Week 3"
+        },
+        {
+            "readings_or_tasks": [
+                "HW3",
+                "ICA C"
+            ],
+            "topic_name": "Web Dev 1 & Web Design",
+            "week_or_date": "Week 4"
+        },
+        {
+            "readings_or_tasks": [
+                "HW4",
+                "ICA D"
+            ],
+            "topic_name": "Web Dev 2 & Interaction Design",
+            "week_or_date": "Week 5"
+        },
+        {
+            "readings_or_tasks": [
+                "HW5",
+                "ICA E"
+            ],
+            "topic_name": "Web Dev 3 & Expert Evaluation",
+            "week_or_date": "Week 6"
+        },
+        {
+            "readings_or_tasks": [
+                "HW6",
+                "ICA F"
+            ],
+            "topic_name": "Web Dev 4 & Accessibility",
+            "week_or_date": "Week 7"
+        },
+        {
+            "readings_or_tasks": null,
+            "topic_name": "Web Dev 5 & Midterm Exam",
+            "week_or_date": "Week 8"
+        },
+        {
+            "readings_or_tasks": [
+                "HW7",
+                "ICA G"
+            ],
+            "topic_name": "Mobile Dev 1 & Mobile Design",
+            "week_or_date": "Week 9"
+        },
+        {
+            "readings_or_tasks": [
+                "HW8",
+                "ICA H"
+            ],
+            "topic_name": "Mobile Dev 2 & Prototyping",
+            "week_or_date": "Week 10"
+        },
+        {
+            "readings_or_tasks": null,
+            "topic_name": "Spring Break",
+            "week_or_date": "Week 11"
+        },
+        {
+            "readings_or_tasks": [
+                "HW9",
+                "ICA I"
+            ],
+            "topic_name": "Mobile Dev 3 & VUI Design",
+            "week_or_date": "Week 11"
+        },
+        {
+            "readings_or_tasks": [
+                "HW10",
+                "ICA J"
+            ],
+            "topic_name": "Agent Dev 1 & Designing Agents",
+            "week_or_date": "Week 12"
+        },
+        {
+            "readings_or_tasks": [
+                "HW11",
+                "ICA K"
+            ],
+            "topic_name": "Agent Dev 2 & User Evaluation",
+            "week_or_date": "Week 13"
+        },
+        {
+            "readings_or_tasks": [
+                "Bonus Activity"
+            ],
+            "topic_name": "Full Stack Dev & Bonus Security Lecture",
+            "week_or_date": "Week 14"
+        },
+        {
+            "readings_or_tasks": null,
+            "topic_name": "Final Exam",
+            "week_or_date": "Week 15"
+        }
+    ],
+    "semester_season": "Spring",
+    "semester_year": 2026,
+    "staff": [
+        {
+            "communication_preference": null,
+            "email": "ctnelson2@wisc.edu",
+            "name": "Cole Nelson",
+            "office": null,
+            "officeHours": null,
+            "phone": null,
+            "role": "Instructor"
+        },
+        {
+            "communication_preference": null,
+            "email": "kjensen29@wisc.edu",
+            "name": "Kathryn Jensen",
+            "office": null,
+            "officeHours": null,
+            "phone": null,
+            "role": "Instructor"
+        },
+        {
+            "communication_preference": null,
+            "email": "hongtaoh@cs.wisc.edu",
+            "name": "Hongtao Hao",
+            "office": null,
+            "officeHours": null,
+            "phone": null,
+            "role": "TA"
+        },
+        {
+            "communication_preference": null,
+            "email": "zliu934@wisc.edu",
+            "name": "Zhaoyang Liu",
+            "office": null,
+            "officeHours": null,
+            "phone": null,
+            "role": "TA"
+        },
+        {
+            "communication_preference": null,
+            "email": "ekoike@wisc.edu",
+            "name": "Amy Koike",
+            "office": null,
+            "officeHours": null,
+            "phone": null,
+            "role": "TA"
+        },
+        {
+            "communication_preference": null,
+            "email": "jpovinelli@wisc.edu",
+            "name": "Kassie Povinelli",
+            "office": null,
+            "officeHours": null,
+            "phone": null,
+            "role": "TA"
+        },
+        {
+            "communication_preference": null,
+            "email": "hspalitta@wisc.edu",
+            "name": "Heidi Spalitta",
+            "office": null,
+            "officeHours": null,
+            "phone": null,
+            "role": "TA"
+        }
+    ],
+    "university_name": "University of Wisconsin-Madison",
+    "what_you_will_learn": "Students are expected to learn about different UI paradigms, handling various types of user inputs, and utilizing specific development APIs and frameworks for building UIs across multiple platforms. They will also learn to engage in design thinking and create high-quality UI designs."
 }

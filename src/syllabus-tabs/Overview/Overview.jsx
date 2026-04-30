@@ -11,6 +11,7 @@ import { ImportantDatesOverviewCard } from "./ImportantDatesOverviewCard";
 export default function Overview() {
     const currentSyllabus = useCurrentSyllabus();
 
+
     if (!currentSyllabus) {
         return <h1>Overview TODO</h1>;
     }

@@ -13,7 +13,7 @@ export default function Grading() {
 
 	const gradeMakeup = currentSyllabus.grade_makeup;
 
-	console.log(gradeMakeup)
+	
 
 
 	return <GradeDistributionCard gradeMakeup={gradeMakeup}></GradeDistributionCard>

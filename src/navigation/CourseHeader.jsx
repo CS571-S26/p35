@@ -18,7 +18,7 @@ export default function SyllabusNavigationBar() {
     const code = currentSyllabus.course_code 
     const title = currentSyllabus.course_title
 
-    console.log(currentSyllabus)
+
     return (
         <div style={{ margin: '10px' }}>
             {code ? <h2 style={{ fontWeight: 'bold' }}>{code}</h2> : <></>}
